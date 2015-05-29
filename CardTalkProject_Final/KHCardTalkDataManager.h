@@ -10,27 +10,28 @@
 #import "KHCardTalkCommunicator.h"
 #import "KHCardBuilder.h"
 #import "KHCardModel.h"
+#import "KHChatBuilder.h"
+#import "KHCardTalkCommunicatorDelegate.h"
+#import "KHCardTalkManagerDelegate.h"
 
-@protocol KHCardTalkDataManagerDelegate <NSObject>
+@interface KHCardTalkDataManager : NSObject <KHCardTalkCommunicatorDelegate>
 
-- (NSArray *)receivedCards;
-- (void)fetchingCardsFailedWithError:(NSError *)error;
-- (void)didReceiveCards:(NSArray *)cards;
-
-@end
-
-
-@interface KHCardTalkDataManager : KHBasicModel
-
-@property (nonatomic, weak) id<KHCardTalkDataManagerDelegate> delegate;
+@property (nonatomic, weak) id<KHCardTalkManagerDelegate> delegate;
 @property (strong) KHCardTalkCommunicator *communicator;
-@property (nonatomic, strong) KHCardBuilder *cardBuilder;
+@property (strong) KHCardBuilder *cardBuilder;
+@property (strong) KHCardModel *cardToFill;
+@property (strong) KHCardModel *cardNeedingImage;
 
-
-- (void) fetchRecentCards;
-- (void) fetchImagesForCard:(KHCardModel*)card;
-- (void) searchingForCardsFailedWithError:(NSError*)error;
-- (void) fetchingForImagesForCardFailedWithError:(NSError *)error;
-- (void) receivedCardJSON:(NSString *)json;
+- (void) fetchCards;
+- (void) postCard:(NSDictionary *)contentDict;
+- (void) postLogin:(NSDictionary *)userInfo;
+- (void) postSignUp:(NSDictionary *)userInfo;
 
 @end
+
+extern NSString *CardTalkManagerError;
+enum {
+    CardTalkManagerErrorCardSearchCode,
+    CardTalkManagerErrorCardImagesFetchCode,
+    CardTalkManagerErrorChatsFetchCode
+};

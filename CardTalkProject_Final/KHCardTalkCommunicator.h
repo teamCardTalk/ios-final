@@ -8,10 +8,31 @@
 
 #import <Foundation/Foundation.h>
 #import "KHCardModel.h"
+#import "KHCardTalkCommunicatorDelegate.h"
 
-@interface KHCardTalkCommunicator : NSObject
+@interface KHCardTalkCommunicator : NSObject<NSURLConnectionDataDelegate> {
+@protected
+    NSURL *fetchingURL;
+    NSURLConnection *fetchingConnection;
+    NSMutableData *receivedData;
+@private
+    id <KHCardTalkCommunicatorDelegate> __weak delegate;
+    void (^errorHandler)(NSError *);
+    void (^successHandler)(NSString *);
+}
 
-- (void)searchForRecentCardsBeforeDate:(NSDate *)date;
-- (void)fetchForImagesForCard:(KHCardModel *)card;
+@property (weak) id <KHCardTalkCommunicatorDelegate> delegate;
+
+
+- (void)searchForRecentCards;
+- (void)postCard:(NSDictionary *)cardDict;
+- (void)postLogin:(NSDictionary *)userInfo;
+- (void)postSignUp:(NSDictionary *)userInfo;
+- (void)cancelAndDiscardURLConnection;
+//- (void)downloadImageForCardWithFileList:(NSArray *)imageFileList;
+//- (void)downloadIconImageWithIconName:(NSString *)iconName;
+//- (void)fetchForImagesForCard:(KHCardModel *)card;
+//- (void)fetchIconImage:(NSString *)iconName;
 
 @end
+extern NSString *KHCardTalkCommunicatorErrorDomain;

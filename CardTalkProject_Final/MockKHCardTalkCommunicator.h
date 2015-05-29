@@ -13,5 +13,6 @@
 
 - (BOOL)wasAskedToFetchCards;
 - (BOOL)wasAskedToFetchImagesForCard;
+- (BOOL)wasAskedToFetchIconImage;
 
 @end

@@ -11,10 +11,15 @@
 @implementation MockKHCardTalkCommunicator {
     BOOL wasAskedToFetchCards;
     BOOL wasAskedToFetchImagesForCard;
+    BOOL wasAskedToFetchIconImage;
 }
 
 - (void)fetchForImagesForCard:(KHCardModel *)card {
     wasAskedToFetchImagesForCard = YES;
+}
+
+- (void)fetchIconImage:(NSString *)imageName {
+    wasAskedToFetchIconImage = YES;
 }
 
 - (void)searchForRecentCardsBeforeDate:(NSDate *)date {
@@ -27,6 +32,10 @@
 
 - (BOOL)wasAskedToFetchImagesForCard {
     return wasAskedToFetchImagesForCard;
+}
+
+- (BOOL)wasAskedToFetchIconImage {
+    return wasAskedToFetchIconImage;
 }
 
 @end

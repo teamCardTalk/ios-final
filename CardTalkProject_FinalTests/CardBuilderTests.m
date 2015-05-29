@@ -92,7 +92,9 @@
     XCTAssertNotNil([[[delegate fetchError] userInfo] objectForKey:NSUnderlyingErrorKey]);
 }
 
-
+- (void)testManagerPassesRetrievedCardImagesToCardBuilder {
+    
+}
 
 
 

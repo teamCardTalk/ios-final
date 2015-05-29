@@ -9,10 +9,7 @@
 #import "KHCardTalkDataManager.h"
 
 
-extern NSString *CardTalkManagerError;
-enum {
-    CardTalkErrorCardSearchCode
-};
+
 
 @implementation KHCardTalkDataManager
 
@@ -23,19 +20,23 @@ enum {
 //    self.delegate = delegate;
 //}
 
-- (void) fetchRecentCards {
-    [self.communicator searchForRecentCardsBeforeDate:[[NSDate alloc] init]];
+- (void) fetchCards {
+    [self.communicator searchForRecentCards];
 }
 
-- (void) fetchImagesForCard:(KHCardModel*)card {
-    [self.communicator fetchForImagesForCard:card];
+- (void) postCard:(NSDictionary *)contentDict {
+    
+}
+
+- (void) postLogin:(NSDictionary *)userInfo {
+    
+}
+
+- (void) postSignUp:(NSDictionary *)userInfo {
+    
 }
 
 - (void) searchingForCardsFailedWithError:(NSError *)error {
-    [self tellDelegateAboutCardSearchError:error];
-}
-
-- (void) fetchingForImagesForCardFailedWithError:(NSError *)error {
     [self tellDelegateAboutCardSearchError:error];
 }
 
@@ -56,7 +57,7 @@ enum {
     if (error) {
         errorInfo = [NSDictionary dictionaryWithObject:error forKey:NSUnderlyingErrorKey];
     }
-    NSError *reportableError = [NSError errorWithDomain:CardTalkManagerError code:CardTalkErrorCardSearchCode userInfo:errorInfo];
+    NSError *reportableError = [NSError errorWithDomain:CardTalkManagerError code:CardTalkManagerErrorCardSearchCode userInfo:errorInfo];
     [self.delegate fetchingCardsFailedWithError:reportableError];
 }
 
