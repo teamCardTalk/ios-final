@@ -47,21 +47,21 @@
     XCTAssertEqual(room.chatList.count, 1);
 }
 
-- (void)testGetRecentChat {
-    NSString *chatString1 = @"{    \"content\" : \"8900원의 행복?\",    \"articleid\" : \"5562c98a8509aeb87c17d7e0\",    \"time\" : \"15-05-25 17:06\",    \"_id\" : \"5562d8218509aeb87c17d7e5\",    \"user\" : {        \"userid\" : \"user02\",        \"nickname\" : \"노란 광대\",        \"icon\" : \"icon/icon2.png\"    }}";
-    NSString *chatString2 = @"{    \"content\" : \"8900원의 행복?\",    \"articleid\" : \"5562c98a8509aeb87c17d7e0\",    \"time\" : \"15-05-20 17:06\",    \"_id\" : \"5562d8218509aeb87c17d7e5\",    \"user\" : {        \"userid\" : \"user02\",        \"nickname\" : \"노란 광대\",        \"icon\" : \"icon/icon2.png\"    }}";
-    
-    KHChatModel *chat01 = [[KHChatModel alloc] initWithJson:chatString1];
-    KHChatModel *chat02 = [[KHChatModel alloc] initWithJson:chatString2];
-    [room addChatToChatList:chat01];
-    [room addChatToChatList:chat02];
-    NSArray *recentChats = [room recentChats];
-    chat01 = recentChats[0];
-    chat02 = recentChats[1];
-    XCTAssertNotNil(chat01);
-    XCTAssertNotNil(chat02);
-    XCTAssertEqualObjects([chat02.date laterDate:chat01.date], chat02.date);
-}
+//- (void)testGetRecentChat {
+//    NSString *chatString1 = @"{    \"content\" : \"8900원의 행복?\",    \"articleid\" : \"5562c98a8509aeb87c17d7e0\",    \"time\" : \"15-05-25 17:06\",    \"_id\" : \"5562d8218509aeb87c17d7e5\",    \"user\" : {        \"userid\" : \"user02\",        \"nickname\" : \"노란 광대\",        \"icon\" : \"icon/icon2.png\"    }}";
+//    NSString *chatString2 = @"{    \"content\" : \"8900원의 행복?\",    \"articleid\" : \"5562c98a8509aeb87c17d7e0\",    \"time\" : \"15-05-20 17:06\",    \"_id\" : \"5562d8218509aeb87c17d7e5\",    \"user\" : {        \"userid\" : \"user02\",        \"nickname\" : \"노란 광대\",        \"icon\" : \"icon/icon2.png\"    }}";
+//    
+//    KHChatModel *chat01 = [[KHChatModel alloc] initWithJson:chatString1];
+//    KHChatModel *chat02 = [[KHChatModel alloc] initWithJson:chatString2];
+//    [room addChatToChatList:chat01];
+//    [room addChatToChatList:chat02];
+////    NSArray *recentChats = [room recentChats];
+//    chat01 = recentChats[0];
+//    chat02 = recentChats[1];
+//    XCTAssertNotNil(chat01);
+//    XCTAssertNotNil(chat02);
+//    XCTAssertEqualObjects([chat02.date laterDate:chat01.date], chat02.date);
+//}
 
 
 @end

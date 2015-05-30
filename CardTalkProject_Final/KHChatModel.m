@@ -33,4 +33,27 @@
     return self;
 }
 
+- (NSDictionary *) convertJsonToDict:(NSString *)json {
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding]
+                                                         options:NSJSONReadingMutableContainers
+                                                           error:nil];
+    
+    return dict;
+}
+
+- (NSArray *)convertJsonToArray:(NSString *)json {
+    NSArray *array = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding]
+                                                     options:NSJSONReadingMutableContainers
+                                                       error:nil];
+    return array;
+}
+
+- (NSDate *)convertDateStringToNSDate:(NSString*) dateString {
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    dateFormat.dateFormat = @"yy-MM-dd HH:mm";
+    NSDate *date = [dateFormat dateFromString:dateString];
+    
+    return date;
+}
+
 @end

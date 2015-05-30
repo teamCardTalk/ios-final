@@ -1,0 +1,22 @@
+//
+//  KHMainTableViewDataSource.h
+//  CardTalkProject_Final
+//
+//  Created by Hyungjin Ko on 2015. 5. 30..
+//  Copyright (c) 2015년 Hyungjin Ko. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "KHCardModel.h"
+#import <Realm/Realm.h>
+#import "KHImageStore.h"
+#import "KHMainImageViewCell.h"
+
+
+@interface KHMainTableViewDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) KHCardModel *card;
+@property (strong) KHImageStore *imageStore;
+
+@end

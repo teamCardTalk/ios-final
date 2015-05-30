@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "KHCardTalkDataManager.h"
 
-@interface MockKHCardTalkDataManagerDelegate : NSObject<KHCardTalkDataManagerDelegate>
+@interface MockKHCardTalkDataManagerDelegate : NSObject<KHCardTalkManagerDelegate>
 
 @property (strong, nonatomic) NSArray *cards;
 @property (strong) NSString *name;

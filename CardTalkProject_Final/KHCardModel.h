@@ -11,6 +11,7 @@
 #import "KHUserModel.h"
 #import "KHImageFileModel.h"
 
+
 @interface KHCardModel : KHBasicModel
 
 @property (nonatomic, strong) NSString *content, *createtime, *title, *articleID;
@@ -18,6 +19,7 @@
 @property (nonatomic,strong) NSMutableArray *imageList;
 @property (nonatomic, strong) KHUserModel *author;
 @property (nonatomic, strong) NSDate *date;
+
 
 - (instancetype)initWithJsonString:(NSString *)json;
 - (instancetype)initWithTitle:(NSString*)title

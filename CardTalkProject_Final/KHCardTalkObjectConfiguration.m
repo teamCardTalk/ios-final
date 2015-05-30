@@ -37,7 +37,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         roomStore = [[KHRoomStore alloc] init];
-        [roomStore useNotificationCenter:[NSNotificationCenter defaultCenter]];
+      //  [roomStore useNotificationCenter:[NSNotificationCenter defaultCenter]];
     });
     return roomStore;
 }

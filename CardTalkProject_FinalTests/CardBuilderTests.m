@@ -81,16 +81,16 @@
     XCTAssertEqual(cards.count, 0);
 }
 
-- (void)testAskingForCardImageMeansRequestingData {
-    [mgr fetchImagesForCard:cardToFetch];
-    XCTAssertTrue([communicator wasAskedToFetchImagesForCard]);
-}
-
-- (void)testDelegateNotifiedOfFailureToFetchImages {
-    NSError *error = [NSError errorWithDomain:@"Test Domain" code:0 userInfo:nil];
-    [mgr fetchingForImagesForCardFailedWithError:error];
-    XCTAssertNotNil([[[delegate fetchError] userInfo] objectForKey:NSUnderlyingErrorKey]);
-}
+//- (void)testAskingForCardImageMeansRequestingData {
+//    [mgr fetchImagesForCard:cardToFetch];
+//    XCTAssertTrue([communicator wasAskedToFetchImagesForCard]);
+//}
+//
+//- (void)testDelegateNotifiedOfFailureToFetchImages {
+//    NSError *error = [NSError errorWithDomain:@"Test Domain" code:0 userInfo:nil];
+//    [mgr fetchingForImagesForCardFailedWithError:error];
+//    XCTAssertNotNil([[[delegate fetchError] userInfo] objectForKey:NSUnderlyingErrorKey]);
+//}
 
 - (void)testManagerPassesRetrievedCardImagesToCardBuilder {
     

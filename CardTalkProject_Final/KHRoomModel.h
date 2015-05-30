@@ -10,15 +10,18 @@
 #import "KHChatModel.h"
 #import "KHCardModel.h"
 
+
 @interface KHRoomModel : KHBasicModel
 
-@property (nonatomic, strong) KHCardModel *card;
-@property (nonatomic, strong) NSMutableArray *chatList;
-@property (nonatomic, strong) NSDate *lastChatDate;
+@property NSString *articleid;
+@property int numberOfParticipants;
+@property RLMArray<KHUserModel> *userList;
+@property RLMArray<KHChatModel> *chatList;
+@property NSDate *lastChatDate;
+@property int numberOfRecentChat;
+@property int readIndex;
 
 - (instancetype)initWithCard:(KHCardModel*)card;
 - (void)addChatToChatList:(KHChatModel *)chat;
-- (NSArray *)recentChats;
-
 
 @end

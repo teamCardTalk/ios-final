@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "KHDetailViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    
     return YES;
 }
 

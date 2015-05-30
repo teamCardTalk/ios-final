@@ -10,7 +10,6 @@
 
 @protocol KHCardTalkManagerDelegate <NSObject>
 
-- (NSArray *)receivedCards;
 - (void)fetchingCardsFailedWithError:(NSError *)error;
 - (void)didReceiveCards:(NSArray *)cards;
 

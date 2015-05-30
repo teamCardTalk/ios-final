@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         _nickname = userInfo[@"nickname"];
-        _icon = userInfo[@"icon"];
+        _iconName = userInfo[@"icon"];
     }
     
     return self;

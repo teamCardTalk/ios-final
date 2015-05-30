@@ -62,14 +62,14 @@ extern NSString *CardTalkManagerError;
 //}
 
 - (void) testConformingObjectCanBeDelegate {
-    id <KHCardTalkDataManagerDelegate> delegate = [[MockKHCardTalkDataManagerDelegate alloc] init];
+    id <KHCardTalkManagerDelegate> delegate = [[MockKHCardTalkDataManagerDelegate alloc] init];
     XCTAssertNoThrow(mgr.delegate = delegate, @"Object conforming to the delegate protocol should be used as the delegate");
 }
 
 - (void) testAskingForCardsMeansRequestingData {
     MockKHCardTalkCommunicator *communicator = [[MockKHCardTalkCommunicator alloc] init];
     mgr.communicator = communicator;
-    [mgr fetchRecentCards];
+//    [mgr fetchRecentCards];
     XCTAssertTrue([communicator wasAskedToFetchCards], @"The communicator should need to fetch data.");
 }
 
@@ -116,13 +116,13 @@ extern NSString *CardTalkManagerError;
     XCTAssertNil(delegate.fetchError, @"No error should be received on success");
 }
 
-- (void) testDelegateReceivesCardsDiscoveredByManager {
-    FakeKHCardBuilder *builder = [[FakeKHCardBuilder alloc] init];
-    mgr.cardBuilder = builder;
-    builder.arrayToReturn = cardArray;
-    [mgr receivedCardJSON:@"Fake Json"];
-    XCTAssertEqualObjects([delegate receivedCards], cardArray, @"The manager should have sent its cards to the delegate");
-}
+//- (void) testDelegateReceivesCardsDiscoveredByManager {
+//    FakeKHCardBuilder *builder = [[FakeKHCardBuilder alloc] init];
+//    mgr.cardBuilder = builder;
+//    builder.arrayToReturn = cardArray;
+//    [mgr receivedCardJSON:@"Fake Json"];
+//    XCTAssertEqualObjects([delegate receivedCards], cardArray, @"The manager should have sent its cards to the delegate");
+//}
 
 
 

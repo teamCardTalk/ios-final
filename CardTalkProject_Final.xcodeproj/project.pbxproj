@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E7581F2AC2B7B2752E03F60 /* libPods-CardTalkProject_Final.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D63C4BD3361E3C4941A74A4 /* libPods-CardTalkProject_Final.a */; };
+		302B3D791B19383100BEBD99 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302B3D781B19383100BEBD99 /* LoginView.xib */; };
+		302B3D7E1B1940EE00BEBD99 /* KHMainTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D7D1B1940EE00BEBD99 /* KHMainTableViewDataSource.m */; };
+		302B3D811B194B6300BEBD99 /* KHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D801B194B6300BEBD99 /* KHMainViewController.m */; };
+		302B3D841B19516900BEBD99 /* KHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D831B19516900BEBD99 /* KHDetailViewController.m */; };
+		302B3D871B19524C00BEBD99 /* KHDetailTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D861B19524C00BEBD99 /* KHDetailTableViewDataSource.m */; };
+		302B3D8B1B195C2900BEBD99 /* KHMainImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D8A1B195C2900BEBD99 /* KHMainImageViewCell.m */; };
 		306F5E161B16F8AF00EC6A69 /* FakeKHCardBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 306F5E151B16F8AF00EC6A69 /* FakeKHCardBuilder.m */; };
 		306F5E191B17210C00EC6A69 /* KHCardBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 306F5E181B17210C00EC6A69 /* KHCardBuilder.m */; };
 		308AA6CC1B1534A200789924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AA6CB1B1534A200789924 /* main.m */; };
 		308AA6CF1B1534A200789924 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AA6CE1B1534A200789924 /* AppDelegate.m */; };
-		308AA6D21B1534A200789924 /* KHBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AA6D11B1534A200789924 /* KHBasicViewController.m */; };
-		308AA6D51B1534A200789924 /* KHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AA6D41B1534A200789924 /* KHDetailViewController.m */; };
 		308AA6D81B1534A200789924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308AA6D61B1534A200789924 /* Main.storyboard */; };
 		308AA6DA1B1534A200789924 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308AA6D91B1534A200789924 /* Images.xcassets */; };
 		308AA6DD1B1534A200789924 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308AA6DB1B1534A200789924 /* LaunchScreen.xib */; };
@@ -40,6 +45,12 @@
 		30D212CF1B18725F008E494C /* KHRoomStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D212CE1B18725F008E494C /* KHRoomStore.m */; };
 		30D212D31B18728A008E494C /* KHImageCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D212D21B18728A008E494C /* KHImageCommunicator.m */; };
 		30D212D71B187C61008E494C /* KHCardTalkObjectConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D212D61B187C61008E494C /* KHCardTalkObjectConfiguration.m */; };
+		30E9FA111B18913700B8705C /* KHRealmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E9FA101B18913700B8705C /* KHRealmTests.m */; };
+		30E9FA141B1894A200B8705C /* KHRealmTestRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E9FA131B1894A200B8705C /* KHRealmTestRoomModel.m */; };
+		30E9FA181B1895CD00B8705C /* KHRealmTestChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E9FA171B1895CD00B8705C /* KHRealmTestChatModel.m */; };
+		30E9FA1B1B18977B00B8705C /* KHRealmTestUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E9FA1A1B18977B00B8705C /* KHRealmTestUserModel.m */; };
+		30E9FA381B18C53700B8705C /* KHAMQPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E9FA371B18C53700B8705C /* KHAMQPTests.m */; };
+		41609274006D74C4A6172CD6 /* libPods-CardTalkProject_FinalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7648328F88BC5EE4E2B7A01 /* libPods-CardTalkProject_FinalTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +64,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		302B3D781B19383100BEBD99 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		302B3D7C1B1940EE00BEBD99 /* KHMainTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainTableViewDataSource.h; sourceTree = "<group>"; };
+		302B3D7D1B1940EE00BEBD99 /* KHMainTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainTableViewDataSource.m; sourceTree = "<group>"; };
+		302B3D7F1B194B6300BEBD99 /* KHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainViewController.h; sourceTree = "<group>"; };
+		302B3D801B194B6300BEBD99 /* KHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainViewController.m; sourceTree = "<group>"; };
+		302B3D821B19516900BEBD99 /* KHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHDetailViewController.h; sourceTree = "<group>"; };
+		302B3D831B19516900BEBD99 /* KHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHDetailViewController.m; sourceTree = "<group>"; };
+		302B3D851B19524C00BEBD99 /* KHDetailTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHDetailTableViewDataSource.h; sourceTree = "<group>"; };
+		302B3D861B19524C00BEBD99 /* KHDetailTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHDetailTableViewDataSource.m; sourceTree = "<group>"; };
+		302B3D891B195C2900BEBD99 /* KHMainImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainImageViewCell.h; sourceTree = "<group>"; };
+		302B3D8A1B195C2900BEBD99 /* KHMainImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainImageViewCell.m; sourceTree = "<group>"; };
 		306F5E141B16F8AF00EC6A69 /* FakeKHCardBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeKHCardBuilder.h; sourceTree = "<group>"; };
 		306F5E151B16F8AF00EC6A69 /* FakeKHCardBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeKHCardBuilder.m; sourceTree = "<group>"; };
 		306F5E171B17210C00EC6A69 /* KHCardBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCardBuilder.h; sourceTree = "<group>"; };
@@ -62,10 +84,6 @@
 		308AA6CB1B1534A200789924 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		308AA6CD1B1534A200789924 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		308AA6CE1B1534A200789924 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		308AA6D01B1534A200789924 /* KHBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KHBasicViewController.h; sourceTree = "<group>"; };
-		308AA6D11B1534A200789924 /* KHBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHBasicViewController.m; sourceTree = "<group>"; };
-		308AA6D31B1534A200789924 /* KHDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KHDetailViewController.h; sourceTree = "<group>"; };
-		308AA6D41B1534A200789924 /* KHDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHDetailViewController.m; sourceTree = "<group>"; };
 		308AA6D71B1534A200789924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		308AA6D91B1534A200789924 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		308AA6DC1B1534A200789924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -112,6 +130,20 @@
 		30D212D21B18728A008E494C /* KHImageCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHImageCommunicator.m; sourceTree = "<group>"; };
 		30D212D51B187C61008E494C /* KHCardTalkObjectConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCardTalkObjectConfiguration.h; sourceTree = "<group>"; };
 		30D212D61B187C61008E494C /* KHCardTalkObjectConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHCardTalkObjectConfiguration.m; sourceTree = "<group>"; };
+		30E9FA101B18913700B8705C /* KHRealmTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRealmTests.m; sourceTree = "<group>"; };
+		30E9FA121B1894A200B8705C /* KHRealmTestRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRealmTestRoomModel.h; sourceTree = "<group>"; };
+		30E9FA131B1894A200B8705C /* KHRealmTestRoomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRealmTestRoomModel.m; sourceTree = "<group>"; };
+		30E9FA161B1895CD00B8705C /* KHRealmTestChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRealmTestChatModel.h; sourceTree = "<group>"; };
+		30E9FA171B1895CD00B8705C /* KHRealmTestChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRealmTestChatModel.m; sourceTree = "<group>"; };
+		30E9FA191B18977B00B8705C /* KHRealmTestUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRealmTestUserModel.h; sourceTree = "<group>"; };
+		30E9FA1A1B18977B00B8705C /* KHRealmTestUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRealmTestUserModel.m; sourceTree = "<group>"; };
+		30E9FA371B18C53700B8705C /* KHAMQPTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAMQPTests.m; sourceTree = "<group>"; };
+		6D63C4BD3361E3C4941A74A4 /* libPods-CardTalkProject_Final.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardTalkProject_Final.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CA74CF174B04AAA62EEB28D /* Pods-CardTalkProject_Final.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardTalkProject_Final.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardTalkProject_Final/Pods-CardTalkProject_Final.release.xcconfig"; sourceTree = "<group>"; };
+		A33D546310A2856FAD75C374 /* Pods-CardTalkProject_Final.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardTalkProject_Final.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardTalkProject_Final/Pods-CardTalkProject_Final.debug.xcconfig"; sourceTree = "<group>"; };
+		B25B18F02419B968437B4991 /* Pods-CardTalkProject_FinalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardTalkProject_FinalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardTalkProject_FinalTests/Pods-CardTalkProject_FinalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB16E870C294BEAFAD8123F2 /* Pods-CardTalkProject_FinalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardTalkProject_FinalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardTalkProject_FinalTests/Pods-CardTalkProject_FinalTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7648328F88BC5EE4E2B7A01 /* libPods-CardTalkProject_FinalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardTalkProject_FinalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7581F2AC2B7B2752E03F60 /* libPods-CardTalkProject_Final.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,18 +159,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41609274006D74C4A6172CD6 /* libPods-CardTalkProject_FinalTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302B3D761B18DCD800BEBD99 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				302B3D8E1B195CE000BEBD99 /* MainDataSource */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		302B3D7A1B193BA500BEBD99 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				302B3D7B1B193D0F00BEBD99 /* LoginViewController */,
+				302B3D8D1B195CBC00BEBD99 /* MainViewController */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		302B3D7B1B193D0F00BEBD99 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				302B3D781B19383100BEBD99 /* LoginView.xib */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		302B3D881B195B1E00BEBD99 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				302B3D8C1B195CAB00BEBD99 /* MainTableCell */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		302B3D8C1B195CAB00BEBD99 /* MainTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				302B3D891B195C2900BEBD99 /* KHMainImageViewCell.h */,
+				302B3D8A1B195C2900BEBD99 /* KHMainImageViewCell.m */,
+			);
+			name = MainTableCell;
+			sourceTree = "<group>";
+		};
+		302B3D8D1B195CBC00BEBD99 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				302B3D7F1B194B6300BEBD99 /* KHMainViewController.h */,
+				302B3D801B194B6300BEBD99 /* KHMainViewController.m */,
+				302B3D821B19516900BEBD99 /* KHDetailViewController.h */,
+				302B3D831B19516900BEBD99 /* KHDetailViewController.m */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		302B3D8E1B195CE000BEBD99 /* MainDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				302B3D7C1B1940EE00BEBD99 /* KHMainTableViewDataSource.h */,
+				302B3D7D1B1940EE00BEBD99 /* KHMainTableViewDataSource.m */,
+				302B3D851B19524C00BEBD99 /* KHDetailTableViewDataSource.h */,
+				302B3D861B19524C00BEBD99 /* KHDetailTableViewDataSource.m */,
+			);
+			name = MainDataSource;
+			sourceTree = "<group>";
+		};
 		308AA6BD1B1534A200789924 = {
 			isa = PBXGroup;
 			children = (
 				308AA6C81B1534A200789924 /* CardTalkProject_Final */,
 				308AA6E51B1534A200789924 /* CardTalkProject_FinalTests */,
 				308AA6C71B1534A200789924 /* Products */,
+				331E23BAD62CDC15F21D8FD8 /* Pods */,
+				8C99D89DB522459B09705C68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,13 +253,13 @@
 		308AA6C81B1534A200789924 /* CardTalkProject_Final */ = {
 			isa = PBXGroup;
 			children = (
+				30E9FA151B1894B300B8705C /* Test */,
 				30D212D41B187C4F008E494C /* Configuration */,
 				30D212C91B187225008E494C /* Store */,
 				30D212C81B180538008E494C /* Builder */,
 				30D212C71B180529008E494C /* Communicator */,
 				308AA7121B161AE600789924 /* DataManager */,
-				308AA6F21B1534D800789924 /* ViewController */,
-				308AA6F51B15350900789924 /* Views */,
+				308AA6F21B1534D800789924 /* TabView */,
 				308AA6F31B1534E500789924 /* Models */,
 				308AA6CD1B1534A200789924 /* AppDelegate.h */,
 				308AA6CE1B1534A200789924 /* AppDelegate.m */,
@@ -192,6 +292,8 @@
 				308AA7131B16958100789924 /* CardCreationWorkFlowTests.m */,
 				30D212BE1B177974008E494C /* CardBuilderTests.m */,
 				30D212C01B17EE18008E494C /* CommunicatorTests.m */,
+				30E9FA101B18913700B8705C /* KHRealmTests.m */,
+				30E9FA371B18C53700B8705C /* KHAMQPTests.m */,
 			);
 			path = CardTalkProject_FinalTests;
 			sourceTree = "<group>";
@@ -204,15 +306,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		308AA6F21B1534D800789924 /* ViewController */ = {
+		308AA6F21B1534D800789924 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
-				308AA6D01B1534A200789924 /* KHBasicViewController.h */,
-				308AA6D11B1534A200789924 /* KHBasicViewController.m */,
-				308AA6F71B1535BE00789924 /* DetailViewController */,
-				308AA6F61B1535AD00789924 /* MainViewController */,
+				302B3D881B195B1E00BEBD99 /* Cell */,
+				302B3D7A1B193BA500BEBD99 /* ViewController */,
+				302B3D761B18DCD800BEBD99 /* DataSource */,
 			);
-			name = ViewController;
+			name = TabView;
 			sourceTree = "<group>";
 		};
 		308AA6F31B1534E500789924 /* Models */ = {
@@ -234,37 +335,12 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		308AA6F51B15350900789924 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		308AA6F61B1535AD00789924 /* MainViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = MainViewController;
-			sourceTree = "<group>";
-		};
-		308AA6F71B1535BE00789924 /* DetailViewController */ = {
-			isa = PBXGroup;
-			children = (
-				308AA6D31B1534A200789924 /* KHDetailViewController.h */,
-				308AA6D41B1534A200789924 /* KHDetailViewController.m */,
-			);
-			name = DetailViewController;
-			sourceTree = "<group>";
-		};
 		308AA7121B161AE600789924 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
 				30D212C61B18050F008E494C /* KHCardTalkManagerDelegate.h */,
 				308AA7151B1695C600789924 /* KHCardTalkDataManager.h */,
 				308AA7161B1695C600789924 /* KHCardTalkDataManager.m */,
-				308AA71A1B16999800789924 /* MockKHCardTalkDataManagerDelegate.h */,
-				308AA71B1B16999800789924 /* MockKHCardTalkDataManagerDelegate.m */,
 			);
 			name = DataManager;
 			sourceTree = "<group>";
@@ -278,8 +354,6 @@
 				30D212D01B187275008E494C /* KHImageCommunicatorDelegate.h */,
 				30D212D11B18728A008E494C /* KHImageCommunicator.h */,
 				30D212D21B18728A008E494C /* KHImageCommunicator.m */,
-				308AA71D1B169E9600789924 /* MockKHCardTalkCommunicator.h */,
-				308AA71E1B169E9600789924 /* MockKHCardTalkCommunicator.m */,
 			);
 			name = Communicator;
 			sourceTree = "<group>";
@@ -291,8 +365,6 @@
 				306F5E181B17210C00EC6A69 /* KHCardBuilder.m */,
 				30D212C21B1802EC008E494C /* KHChatBuilder.h */,
 				30D212C31B1802EC008E494C /* KHChatBuilder.m */,
-				306F5E141B16F8AF00EC6A69 /* FakeKHCardBuilder.h */,
-				306F5E151B16F8AF00EC6A69 /* FakeKHCardBuilder.m */,
 			);
 			name = Builder;
 			sourceTree = "<group>";
@@ -317,6 +389,45 @@
 			name = Configuration;
 			sourceTree = "<group>";
 		};
+		30E9FA151B1894B300B8705C /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				306F5E141B16F8AF00EC6A69 /* FakeKHCardBuilder.h */,
+				306F5E151B16F8AF00EC6A69 /* FakeKHCardBuilder.m */,
+				308AA71D1B169E9600789924 /* MockKHCardTalkCommunicator.h */,
+				308AA71E1B169E9600789924 /* MockKHCardTalkCommunicator.m */,
+				308AA71A1B16999800789924 /* MockKHCardTalkDataManagerDelegate.h */,
+				308AA71B1B16999800789924 /* MockKHCardTalkDataManagerDelegate.m */,
+				30E9FA121B1894A200B8705C /* KHRealmTestRoomModel.h */,
+				30E9FA131B1894A200B8705C /* KHRealmTestRoomModel.m */,
+				30E9FA161B1895CD00B8705C /* KHRealmTestChatModel.h */,
+				30E9FA171B1895CD00B8705C /* KHRealmTestChatModel.m */,
+				30E9FA191B18977B00B8705C /* KHRealmTestUserModel.h */,
+				30E9FA1A1B18977B00B8705C /* KHRealmTestUserModel.m */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		331E23BAD62CDC15F21D8FD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A33D546310A2856FAD75C374 /* Pods-CardTalkProject_Final.debug.xcconfig */,
+				7CA74CF174B04AAA62EEB28D /* Pods-CardTalkProject_Final.release.xcconfig */,
+				B25B18F02419B968437B4991 /* Pods-CardTalkProject_FinalTests.debug.xcconfig */,
+				CB16E870C294BEAFAD8123F2 /* Pods-CardTalkProject_FinalTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C99D89DB522459B09705C68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D63C4BD3361E3C4941A74A4 /* libPods-CardTalkProject_Final.a */,
+				E7648328F88BC5EE4E2B7A01 /* libPods-CardTalkProject_FinalTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,9 +435,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 308AA6EC1B1534A300789924 /* Build configuration list for PBXNativeTarget "CardTalkProject_Final" */;
 			buildPhases = (
+				77A3C3996823774248290CE2 /* Check Pods Manifest.lock */,
 				308AA6C21B1534A200789924 /* Sources */,
 				308AA6C31B1534A200789924 /* Frameworks */,
 				308AA6C41B1534A200789924 /* Resources */,
+				93D292C103D08B31315F7A6C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,9 +454,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 308AA6EF1B1534A300789924 /* Build configuration list for PBXNativeTarget "CardTalkProject_FinalTests" */;
 			buildPhases = (
+				DFF78F03F2F23C6F2D43BF6D /* Check Pods Manifest.lock */,
 				308AA6DE1B1534A200789924 /* Sources */,
 				308AA6DF1B1534A200789924 /* Frameworks */,
 				308AA6E01B1534A200789924 /* Resources */,
+				85DC50C18C7FC334FEEBE817 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -401,6 +516,7 @@
 			files = (
 				308AA6D81B1534A200789924 /* Main.storyboard in Resources */,
 				308AA6DD1B1534A200789924 /* LaunchScreen.xib in Resources */,
+				302B3D791B19383100BEBD99 /* LoginView.xib in Resources */,
 				308AA6DA1B1534A200789924 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +530,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77A3C3996823774248290CE2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		85DC50C18C7FC334FEEBE817 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardTalkProject_FinalTests/Pods-CardTalkProject_FinalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D292C103D08B31315F7A6C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardTalkProject_Final/Pods-CardTalkProject_Final-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFF78F03F2F23C6F2D43BF6D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		308AA6C21B1534A200789924 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -423,19 +602,25 @@
 				308AA7081B15BAEA00789924 /* KHUserModel.m in Sources */,
 				308AA70F1B16054100789924 /* KHRoomModel.m in Sources */,
 				308AA6FD1B1535F300789924 /* KHChatModel.m in Sources */,
+				30E9FA141B1894A200B8705C /* KHRealmTestRoomModel.m in Sources */,
 				30D212D71B187C61008E494C /* KHCardTalkObjectConfiguration.m in Sources */,
 				308AA6CF1B1534A200789924 /* AppDelegate.m in Sources */,
-				308AA6D21B1534A200789924 /* KHBasicViewController.m in Sources */,
 				30D212CF1B18725F008E494C /* KHRoomStore.m in Sources */,
 				30D212CC1B187238008E494C /* KHImageStore.m in Sources */,
+				302B3D7E1B1940EE00BEBD99 /* KHMainTableViewDataSource.m in Sources */,
+				30E9FA1B1B18977B00B8705C /* KHRealmTestUserModel.m in Sources */,
 				308AA7221B16A37C00789924 /* KHCardTalkCommunicator.m in Sources */,
 				30D212C41B1802EC008E494C /* KHChatBuilder.m in Sources */,
+				302B3D871B19524C00BEBD99 /* KHDetailTableViewDataSource.m in Sources */,
 				308AA6CC1B1534A200789924 /* main.m in Sources */,
-				308AA6D51B1534A200789924 /* KHDetailViewController.m in Sources */,
 				308AA7171B1695C600789924 /* KHCardTalkDataManager.m in Sources */,
 				308AA6FA1B1535E100789924 /* KHCardModel.m in Sources */,
 				306F5E191B17210C00EC6A69 /* KHCardBuilder.m in Sources */,
+				302B3D811B194B6300BEBD99 /* KHMainViewController.m in Sources */,
+				302B3D841B19516900BEBD99 /* KHDetailViewController.m in Sources */,
 				308AA7051B15BADC00789924 /* KHImageFileModel.m in Sources */,
+				30E9FA181B1895CD00B8705C /* KHRealmTestChatModel.m in Sources */,
+				302B3D8B1B195C2900BEBD99 /* KHMainImageViewCell.m in Sources */,
 				308AA7021B15954F00789924 /* KHBasicModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,8 +637,10 @@
 				30D212BF1B177974008E494C /* CardBuilderTests.m in Sources */,
 				30D212C11B17EE18008E494C /* CommunicatorTests.m in Sources */,
 				308AA7111B16093D00789924 /* RoomModelTest.m in Sources */,
+				30E9FA111B18913700B8705C /* KHRealmTests.m in Sources */,
 				308AA6FF1B15394D00789924 /* CardModelTests.m in Sources */,
 				308AA7181B1695C600789924 /* KHCardTalkDataManager.m in Sources */,
+				30E9FA381B18C53700B8705C /* KHAMQPTests.m in Sources */,
 				306F5E161B16F8AF00EC6A69 /* FakeKHCardBuilder.m in Sources */,
 				308AA70C1B16019000789924 /* ChatModelTests.m in Sources */,
 			);
@@ -571,6 +758,7 @@
 		};
 		308AA6ED1B1534A300789924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33D546310A2856FAD75C374 /* Pods-CardTalkProject_Final.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -582,6 +770,7 @@
 		};
 		308AA6EE1B1534A300789924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA74CF174B04AAA62EEB28D /* Pods-CardTalkProject_Final.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -593,6 +782,7 @@
 		};
 		308AA6F01B1534A300789924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25B18F02419B968437B4991 /* Pods-CardTalkProject_FinalTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -612,6 +802,7 @@
 		};
 		308AA6F11B1534A300789924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB16E870C294BEAFAD8123F2 /* Pods-CardTalkProject_FinalTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

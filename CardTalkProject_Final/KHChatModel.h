@@ -7,15 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Realm/Realm.h>
 #import "KHUserModel.h"
 
-@interface KHChatModel : KHBasicModel
+@interface KHChatModel : RLMObject
 
-@property (nonatomic, strong) NSString *articleid, *content, *time;
-@property (nonatomic, strong) KHUserModel *user;
-@property (nonatomic, strong) NSDate *date;
+@property KHUserModel *user;
+@property NSString *content;
+@property NSString *time;
+@property NSString *articleid;
+@property NSDate *date;
 
 - (instancetype)initWithJson:(NSString *)json;
 - (instancetype)initWithChatDict:(NSDictionary *)chatDict;
 
 @end
+
+RLM_ARRAY_TYPE(KHChatModel)

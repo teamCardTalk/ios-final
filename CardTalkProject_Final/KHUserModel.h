@@ -7,11 +7,16 @@
 //
 
 #import "KHBasicModel.h"
+#import "RLMObject.h"
 
-@interface KHUserModel : KHBasicModel
+@interface KHUserModel : RLMObject
 
-@property (nonatomic, strong) NSString *nickname, *icon;
+@property NSString *nickname;
+@property NSString *iconName;
+@property NSString *userid;
 
 - (instancetype) initWithUserInfo:(NSDictionary *)userInfo;
 
 @end
+
+RLM_ARRAY_TYPE(KHUserModel)

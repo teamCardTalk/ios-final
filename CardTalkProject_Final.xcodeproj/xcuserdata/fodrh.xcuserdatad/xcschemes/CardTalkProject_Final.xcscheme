@@ -51,6 +51,32 @@
                BlueprintName = "CardTalkProject_FinalTests"
                ReferencedContainer = "container:CardTalkProject_Final.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "CardBuilderTests">
+               </Test>
+               <Test
+                  Identifier = "CardCreationWorkFlowTests">
+               </Test>
+               <Test
+                  Identifier = "CardModelTests">
+               </Test>
+               <Test
+                  Identifier = "CardTalkProject_FinalTests">
+               </Test>
+               <Test
+                  Identifier = "ChatModelTests">
+               </Test>
+               <Test
+                  Identifier = "CommunicatorTests">
+               </Test>
+               <Test
+                  Identifier = "ImageFileModelTests">
+               </Test>
+               <Test
+                  Identifier = "RoomModelTest">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
