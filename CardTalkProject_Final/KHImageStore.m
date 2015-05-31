@@ -28,10 +28,15 @@
     
     NSData *imageData = [dataCache objectForKey:[url absoluteString]];
     if (!imageData) {
-        KHImageCommunicator *communicator = [[KHImageCommunicator alloc] init];
-        [communcators setObject:communicator forKey:[url absoluteString]];
-        communicator.delegate = self;
-        [communicator fetchDataForURL:url];
+        
+        if (![communcators objectForKey:[url absoluteString]]) {
+            KHImageCommunicator *communicator = [[KHImageCommunicator alloc] init];
+            [communcators setObject:communicator forKey:[url absoluteString]];
+            NSLog(@"url : %@", [url absoluteString]);
+            communicator.delegate = self;
+            [communicator fetchDataForURL:url];
+        }
+
     }
     return imageData;
 }
@@ -59,6 +64,7 @@
     [communcators removeObjectForKey:[url absoluteString]];
     NSNotification *note = [NSNotification notificationWithName:ImageStoreDidUpdateContentNotification object:self];
     [notificationCenter postNotification:note];
+    NSLog(@"image Store receivedData");
 }
 
 @end

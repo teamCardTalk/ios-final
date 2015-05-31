@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0E7581F2AC2B7B2752E03F60 /* libPods-CardTalkProject_Final.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D63C4BD3361E3C4941A74A4 /* libPods-CardTalkProject_Final.a */; };
-		302B3D791B19383100BEBD99 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302B3D781B19383100BEBD99 /* LoginView.xib */; };
 		302B3D7E1B1940EE00BEBD99 /* KHMainTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D7D1B1940EE00BEBD99 /* KHMainTableViewDataSource.m */; };
 		302B3D811B194B6300BEBD99 /* KHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D801B194B6300BEBD99 /* KHMainViewController.m */; };
 		302B3D841B19516900BEBD99 /* KHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D831B19516900BEBD99 /* KHDetailViewController.m */; };
 		302B3D871B19524C00BEBD99 /* KHDetailTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D861B19524C00BEBD99 /* KHDetailTableViewDataSource.m */; };
 		302B3D8B1B195C2900BEBD99 /* KHMainImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D8A1B195C2900BEBD99 /* KHMainImageViewCell.m */; };
+		302B3DC31B1AA6C200BEBD99 /* KHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3DC21B1AA6C200BEBD99 /* KHLoginViewController.m */; };
+		302B3DC61B1AA74B00BEBD99 /* KHLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3DC51B1AA74B00BEBD99 /* KHLoginView.m */; };
 		306F5E161B16F8AF00EC6A69 /* FakeKHCardBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 306F5E151B16F8AF00EC6A69 /* FakeKHCardBuilder.m */; };
 		306F5E191B17210C00EC6A69 /* KHCardBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 306F5E181B17210C00EC6A69 /* KHCardBuilder.m */; };
 		308AA6CC1B1534A200789924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AA6CB1B1534A200789924 /* main.m */; };
@@ -64,7 +65,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		302B3D781B19383100BEBD99 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		302B3D7C1B1940EE00BEBD99 /* KHMainTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainTableViewDataSource.h; sourceTree = "<group>"; };
 		302B3D7D1B1940EE00BEBD99 /* KHMainTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainTableViewDataSource.m; sourceTree = "<group>"; };
 		302B3D7F1B194B6300BEBD99 /* KHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainViewController.h; sourceTree = "<group>"; };
@@ -75,6 +75,10 @@
 		302B3D861B19524C00BEBD99 /* KHDetailTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHDetailTableViewDataSource.m; sourceTree = "<group>"; };
 		302B3D891B195C2900BEBD99 /* KHMainImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainImageViewCell.h; sourceTree = "<group>"; };
 		302B3D8A1B195C2900BEBD99 /* KHMainImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainImageViewCell.m; sourceTree = "<group>"; };
+		302B3DC11B1AA6C200BEBD99 /* KHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoginViewController.h; sourceTree = "<group>"; };
+		302B3DC21B1AA6C200BEBD99 /* KHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoginViewController.m; sourceTree = "<group>"; };
+		302B3DC41B1AA74B00BEBD99 /* KHLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoginView.h; sourceTree = "<group>"; };
+		302B3DC51B1AA74B00BEBD99 /* KHLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoginView.m; sourceTree = "<group>"; };
 		306F5E141B16F8AF00EC6A69 /* FakeKHCardBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeKHCardBuilder.h; sourceTree = "<group>"; };
 		306F5E151B16F8AF00EC6A69 /* FakeKHCardBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeKHCardBuilder.m; sourceTree = "<group>"; };
 		306F5E171B17210C00EC6A69 /* KHCardBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCardBuilder.h; sourceTree = "<group>"; };
@@ -186,7 +190,10 @@
 		302B3D7B1B193D0F00BEBD99 /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
-				302B3D781B19383100BEBD99 /* LoginView.xib */,
+				302B3DC11B1AA6C200BEBD99 /* KHLoginViewController.h */,
+				302B3DC21B1AA6C200BEBD99 /* KHLoginViewController.m */,
+				302B3DC41B1AA74B00BEBD99 /* KHLoginView.h */,
+				302B3DC51B1AA74B00BEBD99 /* KHLoginView.m */,
 			);
 			name = LoginViewController;
 			sourceTree = "<group>";
@@ -516,7 +523,6 @@
 			files = (
 				308AA6D81B1534A200789924 /* Main.storyboard in Resources */,
 				308AA6DD1B1534A200789924 /* LaunchScreen.xib in Resources */,
-				302B3D791B19383100BEBD99 /* LoginView.xib in Resources */,
 				308AA6DA1B1534A200789924 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,6 +615,7 @@
 				30D212CC1B187238008E494C /* KHImageStore.m in Sources */,
 				302B3D7E1B1940EE00BEBD99 /* KHMainTableViewDataSource.m in Sources */,
 				30E9FA1B1B18977B00B8705C /* KHRealmTestUserModel.m in Sources */,
+				302B3DC31B1AA6C200BEBD99 /* KHLoginViewController.m in Sources */,
 				308AA7221B16A37C00789924 /* KHCardTalkCommunicator.m in Sources */,
 				30D212C41B1802EC008E494C /* KHChatBuilder.m in Sources */,
 				302B3D871B19524C00BEBD99 /* KHDetailTableViewDataSource.m in Sources */,
@@ -620,6 +627,7 @@
 				302B3D841B19516900BEBD99 /* KHDetailViewController.m in Sources */,
 				308AA7051B15BADC00789924 /* KHImageFileModel.m in Sources */,
 				30E9FA181B1895CD00B8705C /* KHRealmTestChatModel.m in Sources */,
+				302B3DC61B1AA74B00BEBD99 /* KHLoginView.m in Sources */,
 				302B3D8B1B195C2900BEBD99 /* KHMainImageViewCell.m in Sources */,
 				308AA7021B15954F00789924 /* KHBasicModel.m in Sources */,
 			);

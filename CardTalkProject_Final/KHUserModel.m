@@ -20,4 +20,9 @@
     return self;
 }
 
+- (NSString *)getIconName {
+    NSArray *array = [_iconName componentsSeparatedByString:@"/"];
+    return array[1];
+}
+
 @end

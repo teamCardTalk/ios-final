@@ -12,11 +12,18 @@
 #import <Realm/Realm.h>
 #import "KHImageStore.h"
 #import "KHMainImageViewCell.h"
+#import "KHUserModel.h"
+#import "KHImageFileModel.h"
 
 
 @interface KHMainTableViewDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) KHCardModel *card;
+@property (strong, nonatomic) NSArray *cards;
 @property (strong) KHImageStore *imageStore;
+@property (weak) UITableView *tableView;
+@property (strong) NSNotificationCenter *notificationCenter;
+
+- (void)registerForUpdatesToImageStore:(KHImageStore*) imageStore;
+- (void)removeObservationOfUpdatesToImageStore:(KHImageStore *)imageStore;
 
 @end

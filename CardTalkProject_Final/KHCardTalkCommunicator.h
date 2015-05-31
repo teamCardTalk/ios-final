@@ -13,7 +13,9 @@
 @interface KHCardTalkCommunicator : NSObject<NSURLConnectionDataDelegate> {
 @protected
     NSURL *fetchingURL;
+    NSURL *postingURL;
     NSURLConnection *fetchingConnection;
+    NSURLConnection *postingConnection;
     NSMutableData *receivedData;
 @private
     id <KHCardTalkCommunicatorDelegate> __weak delegate;

@@ -15,14 +15,15 @@
 #import "KHDetailViewController.h"
 #import "KHCardModel.h"
 #import "KHDetailTableViewDataSource.h"
+#import "KHLoginViewController.h"
 
 @interface KHMainViewController : UIViewController <KHCardTalkManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSObject <UITableViewDelegate, UITableViewDataSource> *dataSource;
+@property (strong, nonatomic) KHMainTableViewDataSource *dataSource;
 @property (strong, nonatomic) KHCardTalkObjectConfiguration *objectConfiguration;
 @property (strong, nonatomic) KHCardTalkDataManager *manager;
 @property (nonatomic, strong) RLMNotificationToken *dataNotification;
-@property (nonatomic, strong) NSMutableArray *cards;
+
 
 @end

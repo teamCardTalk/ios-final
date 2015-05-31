@@ -16,6 +16,7 @@
 @property NSString *userid;
 
 - (instancetype) initWithUserInfo:(NSDictionary *)userInfo;
+- (NSString*) getIconName;
 
 @end
 
