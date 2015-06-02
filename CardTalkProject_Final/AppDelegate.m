@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "KHRealmCardModel.h"
+#import <Realm/Realm.h>
+
 
 @interface AppDelegate ()
 
@@ -17,10 +20,53 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
+
+    NSData *cookiesData = [[NSUserDefaults standardUserDefaults] objectForKey:@"Cookies"];
+    if ([cookiesData length]) {
+        NSArray *cookies = [NSKeyedUnarchiver unarchiveObjectWithData:cookiesData];
+        for (NSHTTPCookie *cookie in cookies) {
+            [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
+        }
+    }
+
+    [self settingMigration];
     
     return YES;
+}
+
+
+
+- (void)settingMigration {
+    [RLMRealm setSchemaVersion:1 forRealmAtPath:[RLMRealm defaultRealmPath]
+            withMigrationBlock:^(RLMMigration *migration,
+                                 uint64_t oldSchemaVersion) {
+                
+                [migration enumerateObjects:@"KHRealmCardModel" block:^(RLMObject *oldObject, RLMObject *newObject) {
+                    if (oldSchemaVersion < 1) {
+                        newObject[@"content"] = @"";
+                        newObject[@"createtime"] = @"";
+                        newObject[@"title"] = @"";
+                        newObject[@"articleID"] = @"";
+                        newObject[@"partynumber"] = 0;
+                        newObject[@"status"] = 0;
+                        newObject[@"author"] =[[KHUserModel alloc] init];
+                        newObject[@"date"] = [NSDate date];
+                        newObject[@"imageData"] = [[NSData alloc] init];
+                    }
+                }];
+            }];
+    
+    [RLMRealm setSchemaVersion:1 forRealmAtPath:[RLMRealm defaultRealmPath] withMigrationBlock:^(RLMMigration *migration, uint64_t oldSchemaVersion) {
+        [migration enumerateObjects:@"KHChatMode" block:^(RLMObject *oldObject, RLMObject *newObject) {
+            if (oldSchemaVersion < 1) {
+                newObject[@"user"] = [[KHUserModel alloc] init];
+                newObject[@"content"] = @"";
+                newObject[@"time"] = @"";
+                newObject[@"articleid"] = @"";
+                newObject[@"date"] = [NSDate date];
+            }
+        }];
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -43,6 +89,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    NSArray *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+    
+    
+    NSData *cookieData = [NSKeyedArchiver archivedDataWithRootObject:cookies];
+    [[NSUserDefaults standardUserDefaults] setObject:cookieData forKey:@"Cookies"];
 }
 
 @end

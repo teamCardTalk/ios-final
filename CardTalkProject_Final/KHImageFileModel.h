@@ -7,14 +7,18 @@
 //
 
 #import "KHBasicModel.h"
+#import <Realm/Realm.h>
 
-@interface KHImageFileModel : KHBasicModel
+@interface KHImageFileModel : RLMObject
 
-@property (strong, nonatomic) NSString *path;
-@property (strong, nonatomic) NSString *name;
+@property NSString *path;
+@property NSString *name;
+@property NSData *imageData;
 
 +(NSArray *)getImageListFromImageInfoDict:(NSArray *) imageInfos;
 -(instancetype)initWithImageInfo:(NSDictionary *)imageInfo;
 -(NSString *)getFileName;
 
 @end
+
+RLM_ARRAY_TYPE(KHImageFileModel)

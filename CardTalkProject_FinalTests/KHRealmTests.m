@@ -12,6 +12,7 @@
 #import "KHRealmTestUserModel.h"
 #import "KHRealmTestRoomModel.h"
 #import "KHRealmTestChatModel.h"
+#import "KHRealmCardModel.h"
 
 
 @interface KHRealmTests : XCTestCase
@@ -76,6 +77,10 @@
 - (void)testSortedResult {
     RLMResults *sortedAuthor = [[KHRealmTestUserModel allObjects] sortedResultsUsingProperty:@"nickname" ascending:NO];
     NSLog(@"%@", sortedAuthor);
+}
+
+- (void)testCardRealm {
+    
 }
 
 

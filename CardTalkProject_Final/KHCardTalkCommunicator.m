@@ -15,6 +15,7 @@
 
 @end
 
+static NSString *boundary = @"!@#$@#!$@#!$1234567890982123456789!@#$#@$%#@";
 
 @implementation KHCardTalkCommunicator
 
@@ -53,6 +54,20 @@
     
 }
 
+- (void)postFormDataAtURL :(NSURL *)url postData:(NSData*)postData errorHandler:(void (^)(NSError *))errorBlock successHandler:(void (^)(NSString *))successBlock {
+    
+    postingURL = url;
+    errorHandler = [errorBlock copy];
+    successHandler = [successBlock copy];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    [self setCookieForRequest:request];
+    request.HTTPMethod = @"POST";
+    NSString* contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary];
+    [request addValue:contentType forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:postData];
+    [self launchConnectionForPosting:request];
+}
+
 - (void) searchForRecentCards {
     [self fetchContentAtURL:[NSURL URLWithString:@"http://125.209.195.202:3000/card/all"]
                errorHandler:^(NSError *error) {
@@ -63,10 +78,40 @@
              }];
 }
 
+- (void) searchForChatsAtCard:(NSString *)articleid {
+    NSString *URLString = [NSString stringWithFormat:@"http://125.209.195.202:3000/chat/%@",articleid];
+    [self fetchContentAtURL:[NSURL URLWithString:URLString]
+               errorHandler:^(NSError *error) {
+                   [delegate searchingForChatsFailedWithError:error];
+               }
+             successHandler:^(NSString *objectNotation) {
+                 [delegate receivedChatJSON:objectNotation];
+             }];
+}
+
 - (void) postCard:(NSDictionary *)cardDict {
-    NSData *cardData = [self convertDictToJSONData:cardDict];
-    [self postContentAtURL:[NSURL URLWithString:@"http://125.209.195.202:3000/card"]
-                  postData:cardData
+
+    NSLog(@"start post");
+    
+    NSMutableData* body = [NSMutableData data];
+    NSData *data = cardDict[@"imageData"];
+    if (data) {
+        [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+        [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"upload\"; filename=\"%@.jpg\"\r\n", cardDict[@"title"]] dataUsingEncoding:NSUTF8StringEncoding]];
+        [body appendData:[[NSString stringWithFormat:@"Content-Type: application/octet-stream\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+        [body appendData:[NSData dataWithData:data]];
+        [body appendData:[[NSString stringWithFormat:@"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"title\"\r\n\r\n%@", cardDict[@"title"]] dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"content\"\r\n\r\n%@", cardDict[@"content"]] dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [self postFormDataAtURL:[NSURL URLWithString:@"http://125.209.195.202:3000/card"]
+                  postData:body
               errorHandler:^(NSError *error) {
                   [delegate postingForCardsFaildWithError:error];
               }

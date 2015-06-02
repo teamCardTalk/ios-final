@@ -14,16 +14,19 @@
 #import "KHMainImageViewCell.h"
 #import "KHUserModel.h"
 #import "KHImageFileModel.h"
+#import "KHRealmCardModel.h"
 
 
 @interface KHMainTableViewDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) NSArray *cards;
+@property (strong, nonatomic) NSMutableArray *cards;
 @property (strong) KHImageStore *imageStore;
 @property (weak) UITableView *tableView;
 @property (strong) NSNotificationCenter *notificationCenter;
 
 - (void)registerForUpdatesToImageStore:(KHImageStore*) imageStore;
 - (void)removeObservationOfUpdatesToImageStore:(KHImageStore *)imageStore;
+
+- (void)configureCell:(KHMainImageViewCell *)cell fromCard:(KHRealmCardModel *)card;
 
 @end

@@ -47,6 +47,7 @@
         _imageList = [NSMutableArray arrayWithArray:[KHImageFileModel getImageListFromImageInfoDict:cardDict[@"file"]]];
         _author = [[KHUserModel alloc] initWithUserInfo:cardDict[@"author"]];
         _date = [self convertDateStringToNSDate:_createtime];
+        //_room = [[KHRoomModel alloc] initWithCard:self];
     }
     
     return self;

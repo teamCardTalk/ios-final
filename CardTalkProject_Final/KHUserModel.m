@@ -22,7 +22,8 @@
 
 - (NSString *)getIconName {
     NSArray *array = [_iconName componentsSeparatedByString:@"/"];
-    return array[1];
+    
+    return (array.count > 1) ? array[1]:_iconName;
 }
 
 @end

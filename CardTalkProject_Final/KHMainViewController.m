@@ -32,7 +32,8 @@
     [self.dataSource registerForUpdatesToImageStore:self.dataSource.imageStore];
     
     [self registerAllNotificationHandler];
-    [self.manager fetchCards];
+//    [self.manager fetchCards];
+    [self.manager fetchCardsFromPrivateRealm];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -57,6 +58,7 @@
 - (void)registerAllNotificationHandler {
     [self registerLoginFailNotificationHandler];
     [self registerImageUpdateNotificationHandler];
+    [self registerPostCardNotificationHandler];
 }
 
 - (void)registerLoginFailNotificationHandler {
@@ -72,6 +74,14 @@
      addObserver:self
      selector:@selector(receivedImage:)
      name:ImageStoreDidUpdateContentNotification
+     object:nil];
+}
+
+- (void)registerPostCardNotificationHandler {
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(fetchCards:)
+     name:@"post card"
      object:nil];
 }
 
@@ -93,6 +103,11 @@
     });
 }
 
+- (void)fetchCards:(NSNotification *)notification {
+    KHRealmCardModel *card = notification.userInfo[@"card"];
+    [self didReceiveOneCard:card];
+}
+
 #pragma mark - Segue
 
 
@@ -105,7 +120,11 @@
         detailTableViewController.dataSource = detailDataSource;
         detailTableViewController.objectConfiguration = self.objectConfiguration;
         detailDataSource.card = self.dataSource.cards[indexPath.row];
+        detailDataSource.imageStore = self.objectConfiguration.imageStore;
         //datasource 설정, 등
+    } else if ([[segue identifier] isEqualToString:@"writeView"]) {
+        KHWriteViewController *writeViewController = [segue destinationViewController];
+        writeViewController.manager = self.objectConfiguration.kHCardTlakDatamanager;
     }
 }
 
@@ -117,8 +136,14 @@
 }
 
 - (void)didReceiveCards:(NSArray *)cards {
-    self.dataSource.cards = [NSArray arrayWithArray:cards];
+    self.dataSource.cards = [NSMutableArray arrayWithArray:cards];
     [self.tableView reloadData];
+}
+
+- (void)didReceiveOneCard:(KHRealmCardModel *)card {
+    [self.dataSource.cards insertObject:card atIndex:0];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 @end

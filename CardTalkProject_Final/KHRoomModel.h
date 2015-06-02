@@ -5,13 +5,13 @@
 //  Created by Hyungjin Ko on 2015. 5. 27..
 //  Copyright (c) 2015년 Hyungjin Ko. All rights reserved.
 //
-
-#import "KHBasicModel.h"
-#import "KHChatModel.h"
 #import "KHCardModel.h"
+#import <Realm/Realm.h>
+#import "KHChatModel.h"
+#import "KHUserModel.h"
 
 
-@interface KHRoomModel : KHBasicModel
+@interface KHRoomModel : RLMObject
 
 @property NSString *articleid;
 @property int numberOfParticipants;
@@ -21,7 +21,8 @@
 @property int numberOfRecentChat;
 @property int readIndex;
 
-- (instancetype)initWithCard:(KHCardModel*)card;
+//- (instancetype)initWithCard:(KHCardModel *)card;
 - (void)addChatToChatList:(KHChatModel *)chat;
 
 @end
+RLM_ARRAY_TYPE(KHRoomModel)

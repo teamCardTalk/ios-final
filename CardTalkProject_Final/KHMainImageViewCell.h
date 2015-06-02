@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "KHCardModel.h"
+#import "KHRealmCardModel.h"
 
 @interface KHMainImageViewCell : UITableViewCell
 
@@ -25,8 +26,10 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewHeightConstraint;
 
 @property (strong, nonatomic) KHCardModel *card;
+@property (strong, nonatomic) KHRealmCardModel *realmCard;
 
 - (void)cellConfiguration;
+- (void)realmCellConfiguration;
 - (void)mainImageViewConfiguration:(UIImage *)image;
 - (void)iconImageViewConfiguration:(UIImage *)image;
 

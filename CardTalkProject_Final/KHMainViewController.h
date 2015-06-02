@@ -16,6 +16,9 @@
 #import "KHCardModel.h"
 #import "KHDetailTableViewDataSource.h"
 #import "KHLoginViewController.h"
+#import "KHWriteViewController.h"
+#import "KHRealmCardModel.h"
+
 
 @interface KHMainViewController : UIViewController <KHCardTalkManagerDelegate>
 

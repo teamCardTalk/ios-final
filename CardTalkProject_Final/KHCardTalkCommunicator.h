@@ -27,6 +27,7 @@
 
 
 - (void)searchForRecentCards;
+- (void)searchForChatsAtCard:(NSString *)articleid;
 - (void)postCard:(NSDictionary *)cardDict;
 - (void)postLogin:(NSDictionary *)userInfo;
 - (void)postSignUp:(NSDictionary *)userInfo;

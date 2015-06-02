@@ -20,8 +20,25 @@
 //    self.delegate = delegate;
 //}
 
+- (void) fetchChatsAtCard:(NSString *)articleid {
+    [self.communicator searchForChatsAtCard:articleid];
+}
+
 - (void) fetchCards {
     [self.communicator searchForRecentCards];
+}
+
+- (void) fetchCardsFromPrivateRealm {
+    RLMResults *cards = [[KHRealmCardModel allObjects] sortedResultsUsingProperty:@"date" ascending:NO];
+    NSArray *cardsArray = [[self convertRLMResultsToNSArray:cards] copy];
+    [self.delegate didReceiveCards:cardsArray];
+}
+
+- (void) fetchChatsFromPrivateRealmAtCard:(NSString *)ariticleid {
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"articleid = %@", ariticleid];
+    RLMResults *chats = [KHChatModel objectsWithPredicate:pred];
+    NSArray *chatsArray = [self convertRLMResultsToNSArray:chats];
+    [self.delegate didReceiveChats:chatsArray];
 }
 
 - (void) postCard:(NSDictionary *)contentDict {
@@ -41,6 +58,10 @@
     [self tellDelegateAboutCardSearchError:error];
 }
 
+- (void) searchingForChatsFailedWithError:(NSError *)error {
+    [self tellDelegateAboutCardSearchError:error];
+}
+
 - (void) postingForCardsFaildWithError:(NSError *)error {
     [self tellDelegateAboutCardSearchError:error];
 }
@@ -55,29 +76,31 @@
 }
 
 - (void) finishPostCard:(NSString *)response {
-    
+    [self.delegate didPostCard];
 }
 
 - (void) finishPostLogin:(NSString *)response {
     if ([self loginFailedMessage:response]) {
         return;
     }
-    
+    NSLog(@"login response : %@", response);
+    NSDictionary *userInfo = [[[self convertJSONToDict:response] objectForKey:@"passport"] objectForKey:@"user"];
+    KHHostModel *host = [[KHHostModel alloc] initWithUserInfo:userInfo];
+    [host saveHost];
 }
 
 - (void) finishPostSignUp:(NSString *)response {
-    
+
 }
 
 - (void)receivedCardJSON:(NSString *)json {
     //json은 nil이 될 수 없음. 이전에 미리 에러 처리를 했기 떄문에.
     NSError *error = nil;
-    
-    NSLog(@"received CardJson %@", json);
+
     if ([self loginFailedMessage:json]) {
         return;
     }
-    
+
     NSArray *cards = [self.cardBuilder cardsFromJSON:json error:&error];
     //json 파싱이 안되면 nil반환, error메세지 담겨야함.
     
@@ -86,6 +109,25 @@
         [self tellDelegateAboutCardSearchError:error];
     } else {
         [self.delegate didReceiveCards:cards];
+    }
+}
+
+- (void)receivedChatJSON:(NSString *)json {
+    NSError *error = nil;
+    
+    NSLog(@"%@",json);
+    if ([self loginFailedMessage:json]) {
+        return;
+    }
+    
+    self.chatBuilder = [[KHChatBuilder alloc] init];
+    NSArray *chats = [self.chatBuilder chatsFromJSON:json error:&error];
+    
+    
+    if (!chats) {
+        [self tellDelegateAboutCardSearchError:error];
+    } else {
+        [self.delegate didReceiveChats:chats];
     }
 }
 
@@ -106,7 +148,7 @@
 }
 
 - (BOOL)loginFailedMessage:(NSString *)response {
-    NSLog(@"delegate에 레스폰스 전달 %@", response);
+
     id resp = [self convertJSONToDict:response];
     if ([resp isKindOfClass:[NSArray class]])
         return NO;
@@ -118,6 +160,14 @@
         return YES;
     }
     return NO;
+}
+
+- (NSArray *)convertRLMResultsToNSArray:(RLMResults *)results {
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:results.count];
+    for (KHRealmCardModel *object in results) {
+        [array addObject:object];
+    }
+    return [NSArray arrayWithArray:array];
 }
 
 @end

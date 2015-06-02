@@ -41,7 +41,7 @@ enum {
     NSMutableArray *cardModelList = [[NSMutableArray alloc] init];
     for (NSDictionary *cardDict in parsedObject) {
         KHCardModel *card = [[KHCardModel alloc] initWithCardDict:cardDict];
-        [cardModelList addObject:card];
+        [cardModelList insertObject:card atIndex:0];
     }
     return cardModelList;
     // 형식상 안맞는 에러코드 나와야 함..

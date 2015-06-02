@@ -13,16 +13,25 @@
 #import "KHChatBuilder.h"
 #import "KHCardTalkCommunicatorDelegate.h"
 #import "KHCardTalkManagerDelegate.h"
+#import "KHHostModel.h"
+#import "KHRealmCommunicator.h"
+#import <Realm/Realm.h>
+#import "KHRealmCardModel.h"
+#import "KHChatModel.h"
 
 @interface KHCardTalkDataManager : NSObject <KHCardTalkCommunicatorDelegate>
 
 @property (nonatomic, weak) id<KHCardTalkManagerDelegate> delegate;
 @property (strong) KHCardTalkCommunicator *communicator;
 @property (strong) KHCardBuilder *cardBuilder;
+@property (strong) KHChatBuilder *chatBuilder;
 @property (strong) KHCardModel *cardToFill;
 @property (strong) KHCardModel *cardNeedingImage;
 
 - (void) fetchCards;
+- (void) fetchCardsFromPrivateRealm;
+- (void) fetchChatsFromPrivateRealmAtCard:(NSString *)ariticleid;
+- (void) fetchChatsAtCard:(NSString *)articleid;
 - (void) postCard:(NSDictionary *)contentDict;
 - (void) postLogin:(NSDictionary *)userInfo;
 - (void) postSignUp:(NSDictionary *)userInfo;
