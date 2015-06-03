@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0E7581F2AC2B7B2752E03F60 /* libPods-CardTalkProject_Final.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D63C4BD3361E3C4941A74A4 /* libPods-CardTalkProject_Final.a */; };
-		302B3D791B19383100BEBD99 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302B3D781B19383100BEBD99 /* LoginView.xib */; };
 		302B3D7E1B1940EE00BEBD99 /* KHMainTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D7D1B1940EE00BEBD99 /* KHMainTableViewDataSource.m */; };
 		302B3D811B194B6300BEBD99 /* KHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D801B194B6300BEBD99 /* KHMainViewController.m */; };
 		302B3D841B19516900BEBD99 /* KHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D831B19516900BEBD99 /* KHDetailViewController.m */; };
 		302B3D871B19524C00BEBD99 /* KHDetailTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D861B19524C00BEBD99 /* KHDetailTableViewDataSource.m */; };
 		302B3D8B1B195C2900BEBD99 /* KHMainImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3D8A1B195C2900BEBD99 /* KHMainImageViewCell.m */; };
+		302B3DC31B1AA6C200BEBD99 /* KHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3DC21B1AA6C200BEBD99 /* KHLoginViewController.m */; };
+		302B3DC61B1AA74B00BEBD99 /* KHLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3DC51B1AA74B00BEBD99 /* KHLoginView.m */; };
+		302B3DC91B1B2B6E00BEBD99 /* KHHostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B3DC81B1B2B6E00BEBD99 /* KHHostModel.m */; };
+		30593F921B1B521B0067EBA8 /* KHAMQPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30593F911B1B521B0067EBA8 /* KHAMQPTests.m */; };
+		305940FF1B1B88D50067EBA8 /* KHWriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 305940FE1B1B88D50067EBA8 /* KHWriteViewController.m */; };
+		305941051B1BEED10067EBA8 /* KHDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 305941041B1BEED10067EBA8 /* KHDetailViewCell.m */; };
+		305941091B1C0ACE0067EBA8 /* KHChatViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 305941081B1C0ACE0067EBA8 /* KHChatViewCell.m */; };
 		306F5E161B16F8AF00EC6A69 /* FakeKHCardBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 306F5E151B16F8AF00EC6A69 /* FakeKHCardBuilder.m */; };
 		306F5E191B17210C00EC6A69 /* KHCardBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 306F5E181B17210C00EC6A69 /* KHCardBuilder.m */; };
 		308AA6CC1B1534A200789924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AA6CB1B1534A200789924 /* main.m */; };
@@ -38,6 +44,7 @@
 		308AA71C1B16999800789924 /* MockKHCardTalkDataManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AA71B1B16999800789924 /* MockKHCardTalkDataManagerDelegate.m */; };
 		308AA71F1B169E9600789924 /* MockKHCardTalkCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AA71E1B169E9600789924 /* MockKHCardTalkCommunicator.m */; };
 		308AA7221B16A37C00789924 /* KHCardTalkCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AA7211B16A37C00789924 /* KHCardTalkCommunicator.m */; };
+		30BF3CB91B1DBB62008F4776 /* KHRealmCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BF3CB81B1DBB62008F4776 /* KHRealmCardModel.m */; };
 		30D212BF1B177974008E494C /* CardBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D212BE1B177974008E494C /* CardBuilderTests.m */; };
 		30D212C11B17EE18008E494C /* CommunicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D212C01B17EE18008E494C /* CommunicatorTests.m */; };
 		30D212C41B1802EC008E494C /* KHChatBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D212C31B1802EC008E494C /* KHChatBuilder.m */; };
@@ -49,7 +56,6 @@
 		30E9FA141B1894A200B8705C /* KHRealmTestRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E9FA131B1894A200B8705C /* KHRealmTestRoomModel.m */; };
 		30E9FA181B1895CD00B8705C /* KHRealmTestChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E9FA171B1895CD00B8705C /* KHRealmTestChatModel.m */; };
 		30E9FA1B1B18977B00B8705C /* KHRealmTestUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E9FA1A1B18977B00B8705C /* KHRealmTestUserModel.m */; };
-		30E9FA381B18C53700B8705C /* KHAMQPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E9FA371B18C53700B8705C /* KHAMQPTests.m */; };
 		41609274006D74C4A6172CD6 /* libPods-CardTalkProject_FinalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7648328F88BC5EE4E2B7A01 /* libPods-CardTalkProject_FinalTests.a */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +70,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		302B3D781B19383100BEBD99 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		302B3D7C1B1940EE00BEBD99 /* KHMainTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainTableViewDataSource.h; sourceTree = "<group>"; };
 		302B3D7D1B1940EE00BEBD99 /* KHMainTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainTableViewDataSource.m; sourceTree = "<group>"; };
 		302B3D7F1B194B6300BEBD99 /* KHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainViewController.h; sourceTree = "<group>"; };
@@ -75,6 +80,52 @@
 		302B3D861B19524C00BEBD99 /* KHDetailTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHDetailTableViewDataSource.m; sourceTree = "<group>"; };
 		302B3D891B195C2900BEBD99 /* KHMainImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainImageViewCell.h; sourceTree = "<group>"; };
 		302B3D8A1B195C2900BEBD99 /* KHMainImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainImageViewCell.m; sourceTree = "<group>"; };
+		302B3DC11B1AA6C200BEBD99 /* KHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoginViewController.h; sourceTree = "<group>"; };
+		302B3DC21B1AA6C200BEBD99 /* KHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoginViewController.m; sourceTree = "<group>"; };
+		302B3DC41B1AA74B00BEBD99 /* KHLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoginView.h; sourceTree = "<group>"; };
+		302B3DC51B1AA74B00BEBD99 /* KHLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoginView.m; sourceTree = "<group>"; };
+		302B3DC71B1B2B6E00BEBD99 /* KHHostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHHostModel.h; sourceTree = "<group>"; };
+		302B3DC81B1B2B6E00BEBD99 /* KHHostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHHostModel.m; sourceTree = "<group>"; };
+		30593F2F1B1B4D840067EBA8 /* librabbitmq-objc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "librabbitmq-objc"; path = "../../../librabbitmq-objc"; sourceTree = "<group>"; };
+		30593F621B1B4FCF0067EBA8 /* librabbitmq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librabbitmq.a; path = "../../../librabbitmq-objc/rabbitmq-c/librabbitmq.a"; sourceTree = "<group>"; };
+		30593F651B1B500C0067EBA8 /* AMQPChannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPChannel.h; path = "../../../librabbitmq-objc/AMQPChannel.h"; sourceTree = "<group>"; };
+		30593F661B1B500C0067EBA8 /* AMQPChannel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMQPChannel.m; path = "../../../librabbitmq-objc/AMQPChannel.m"; sourceTree = "<group>"; };
+		30593F671B1B500C0067EBA8 /* AMQPConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPConnection.h; path = "../../../librabbitmq-objc/AMQPConnection.h"; sourceTree = "<group>"; };
+		30593F681B1B500C0067EBA8 /* AMQPConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMQPConnection.m; path = "../../../librabbitmq-objc/AMQPConnection.m"; sourceTree = "<group>"; };
+		30593F691B1B500C0067EBA8 /* AMQPConsumer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPConsumer.h; path = "../../../librabbitmq-objc/AMQPConsumer.h"; sourceTree = "<group>"; };
+		30593F6A1B1B500C0067EBA8 /* AMQPConsumer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMQPConsumer.m; path = "../../../librabbitmq-objc/AMQPConsumer.m"; sourceTree = "<group>"; };
+		30593F6B1B1B500C0067EBA8 /* AMQPConsumerThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPConsumerThread.h; path = "../../../librabbitmq-objc/AMQPConsumerThread.h"; sourceTree = "<group>"; };
+		30593F6C1B1B500C0067EBA8 /* AMQPConsumerThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMQPConsumerThread.m; path = "../../../librabbitmq-objc/AMQPConsumerThread.m"; sourceTree = "<group>"; };
+		30593F6D1B1B500C0067EBA8 /* AMQPConsumerThreadDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPConsumerThreadDelegate.h; path = "../../../librabbitmq-objc/AMQPConsumerThreadDelegate.h"; sourceTree = "<group>"; };
+		30593F6E1B1B500C0067EBA8 /* AMQPExchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPExchange.h; path = "../../../librabbitmq-objc/AMQPExchange.h"; sourceTree = "<group>"; };
+		30593F6F1B1B500C0067EBA8 /* AMQPExchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMQPExchange.m; path = "../../../librabbitmq-objc/AMQPExchange.m"; sourceTree = "<group>"; };
+		30593F701B1B500C0067EBA8 /* AMQPExchange+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AMQPExchange+Additions.h"; path = "../../../librabbitmq-objc/AMQPExchange+Additions.h"; sourceTree = "<group>"; };
+		30593F711B1B500C0067EBA8 /* AMQPExchange+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AMQPExchange+Additions.m"; path = "../../../librabbitmq-objc/AMQPExchange+Additions.m"; sourceTree = "<group>"; };
+		30593F721B1B500C0067EBA8 /* AMQPMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPMessage.h; path = "../../../librabbitmq-objc/AMQPMessage.h"; sourceTree = "<group>"; };
+		30593F731B1B500C0067EBA8 /* AMQPMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMQPMessage.m; path = "../../../librabbitmq-objc/AMQPMessage.m"; sourceTree = "<group>"; };
+		30593F741B1B500C0067EBA8 /* AMQPObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPObject.h; path = "../../../librabbitmq-objc/AMQPObject.h"; sourceTree = "<group>"; };
+		30593F751B1B500C0067EBA8 /* AMQPObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMQPObject.m; path = "../../../librabbitmq-objc/AMQPObject.m"; sourceTree = "<group>"; };
+		30593F761B1B500C0067EBA8 /* AMQPQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPQueue.h; path = "../../../librabbitmq-objc/AMQPQueue.h"; sourceTree = "<group>"; };
+		30593F771B1B500C0067EBA8 /* AMQPQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMQPQueue.m; path = "../../../librabbitmq-objc/AMQPQueue.m"; sourceTree = "<group>"; };
+		30593F781B1B500C0067EBA8 /* AMQPTTLManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPTTLManager.h; path = "../../../librabbitmq-objc/AMQPTTLManager.h"; sourceTree = "<group>"; };
+		30593F791B1B500C0067EBA8 /* AMQPTTLManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMQPTTLManager.m; path = "../../../librabbitmq-objc/AMQPTTLManager.m"; sourceTree = "<group>"; };
+		30593F7A1B1B500C0067EBA8 /* AMQPWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMQPWrapper.h; path = "../../../librabbitmq-objc/AMQPWrapper.h"; sourceTree = "<group>"; };
+		30593F911B1B521B0067EBA8 /* KHAMQPTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAMQPTests.m; sourceTree = "<group>"; };
+		30593F931B1B56120067EBA8 /* amqp_framing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = amqp_framing.h; path = "../../../librabbitmq-objc/rabbitmq-c/amqp_framing.h"; sourceTree = "<group>"; };
+		30593F941B1B56120067EBA8 /* amqp_hostcheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = amqp_hostcheck.h; path = "../../../librabbitmq-objc/rabbitmq-c/amqp_hostcheck.h"; sourceTree = "<group>"; };
+		30593F951B1B56120067EBA8 /* amqp_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = amqp_private.h; path = "../../../librabbitmq-objc/rabbitmq-c/amqp_private.h"; sourceTree = "<group>"; };
+		30593F961B1B56120067EBA8 /* amqp_socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = amqp_socket.h; path = "../../../librabbitmq-objc/rabbitmq-c/amqp_socket.h"; sourceTree = "<group>"; };
+		30593F971B1B56120067EBA8 /* amqp_ssl_socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = amqp_ssl_socket.h; path = "../../../librabbitmq-objc/rabbitmq-c/amqp_ssl_socket.h"; sourceTree = "<group>"; };
+		30593F981B1B56120067EBA8 /* amqp_tcp_socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = amqp_tcp_socket.h; path = "../../../librabbitmq-objc/rabbitmq-c/amqp_tcp_socket.h"; sourceTree = "<group>"; };
+		30593F991B1B56120067EBA8 /* amqp_timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = amqp_timer.h; path = "../../../librabbitmq-objc/rabbitmq-c/amqp_timer.h"; sourceTree = "<group>"; };
+		30593F9A1B1B56120067EBA8 /* amqp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = amqp.h; path = "../../../librabbitmq-objc/rabbitmq-c/amqp.h"; sourceTree = "<group>"; };
+		30593FA31B1B57B50067EBA8 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = "../../../librabbitmq-objc/LICENSE.md"; sourceTree = "<group>"; };
+		305940FD1B1B88D50067EBA8 /* KHWriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHWriteViewController.h; sourceTree = "<group>"; };
+		305940FE1B1B88D50067EBA8 /* KHWriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHWriteViewController.m; sourceTree = "<group>"; };
+		305941031B1BEED10067EBA8 /* KHDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHDetailViewCell.h; sourceTree = "<group>"; };
+		305941041B1BEED10067EBA8 /* KHDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHDetailViewCell.m; sourceTree = "<group>"; };
+		305941071B1C0ACE0067EBA8 /* KHChatViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHChatViewCell.h; sourceTree = "<group>"; };
+		305941081B1C0ACE0067EBA8 /* KHChatViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHChatViewCell.m; sourceTree = "<group>"; };
 		306F5E141B16F8AF00EC6A69 /* FakeKHCardBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeKHCardBuilder.h; sourceTree = "<group>"; };
 		306F5E151B16F8AF00EC6A69 /* FakeKHCardBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeKHCardBuilder.m; sourceTree = "<group>"; };
 		306F5E171B17210C00EC6A69 /* KHCardBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCardBuilder.h; sourceTree = "<group>"; };
@@ -115,6 +166,8 @@
 		308AA71E1B169E9600789924 /* MockKHCardTalkCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockKHCardTalkCommunicator.m; sourceTree = "<group>"; };
 		308AA7201B16A37C00789924 /* KHCardTalkCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCardTalkCommunicator.h; sourceTree = "<group>"; };
 		308AA7211B16A37C00789924 /* KHCardTalkCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHCardTalkCommunicator.m; sourceTree = "<group>"; };
+		30BF3CB71B1DBB62008F4776 /* KHRealmCardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRealmCardModel.h; sourceTree = "<group>"; };
+		30BF3CB81B1DBB62008F4776 /* KHRealmCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRealmCardModel.m; sourceTree = "<group>"; };
 		30D212BE1B177974008E494C /* CardBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardBuilderTests.m; sourceTree = "<group>"; };
 		30D212C01B17EE18008E494C /* CommunicatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicatorTests.m; sourceTree = "<group>"; };
 		30D212C21B1802EC008E494C /* KHChatBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHChatBuilder.h; sourceTree = "<group>"; };
@@ -137,7 +190,6 @@
 		30E9FA171B1895CD00B8705C /* KHRealmTestChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRealmTestChatModel.m; sourceTree = "<group>"; };
 		30E9FA191B18977B00B8705C /* KHRealmTestUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHRealmTestUserModel.h; sourceTree = "<group>"; };
 		30E9FA1A1B18977B00B8705C /* KHRealmTestUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHRealmTestUserModel.m; sourceTree = "<group>"; };
-		30E9FA371B18C53700B8705C /* KHAMQPTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHAMQPTests.m; sourceTree = "<group>"; };
 		6D63C4BD3361E3C4941A74A4 /* libPods-CardTalkProject_Final.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardTalkProject_Final.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA74CF174B04AAA62EEB28D /* Pods-CardTalkProject_Final.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardTalkProject_Final.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardTalkProject_Final/Pods-CardTalkProject_Final.release.xcconfig"; sourceTree = "<group>"; };
 		A33D546310A2856FAD75C374 /* Pods-CardTalkProject_Final.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardTalkProject_Final.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardTalkProject_Final/Pods-CardTalkProject_Final.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,8 +229,9 @@
 		302B3D7A1B193BA500BEBD99 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				302B3D7B1B193D0F00BEBD99 /* LoginViewController */,
 				302B3D8D1B195CBC00BEBD99 /* MainViewController */,
+				305940FC1B1B88BC0067EBA8 /* WriteViewController */,
+				302B3D7B1B193D0F00BEBD99 /* LoginViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -186,7 +239,10 @@
 		302B3D7B1B193D0F00BEBD99 /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
-				302B3D781B19383100BEBD99 /* LoginView.xib */,
+				302B3DC11B1AA6C200BEBD99 /* KHLoginViewController.h */,
+				302B3DC21B1AA6C200BEBD99 /* KHLoginViewController.m */,
+				302B3DC41B1AA74B00BEBD99 /* KHLoginView.h */,
+				302B3DC51B1AA74B00BEBD99 /* KHLoginView.m */,
 			);
 			name = LoginViewController;
 			sourceTree = "<group>";
@@ -204,6 +260,8 @@
 			children = (
 				302B3D891B195C2900BEBD99 /* KHMainImageViewCell.h */,
 				302B3D8A1B195C2900BEBD99 /* KHMainImageViewCell.m */,
+				305941061B1C0AB00067EBA8 /* ChatCell */,
+				305941021B1BEE440067EBA8 /* MainDetailCell */,
 			);
 			name = MainTableCell;
 			sourceTree = "<group>";
@@ -213,8 +271,7 @@
 			children = (
 				302B3D7F1B194B6300BEBD99 /* KHMainViewController.h */,
 				302B3D801B194B6300BEBD99 /* KHMainViewController.m */,
-				302B3D821B19516900BEBD99 /* KHDetailViewController.h */,
-				302B3D831B19516900BEBD99 /* KHDetailViewController.m */,
+				305941011B1BE9170067EBA8 /* MainDetailViewController */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -228,6 +285,42 @@
 				302B3D861B19524C00BEBD99 /* KHDetailTableViewDataSource.m */,
 			);
 			name = MainDataSource;
+			sourceTree = "<group>";
+		};
+		305940FC1B1B88BC0067EBA8 /* WriteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				305940FD1B1B88D50067EBA8 /* KHWriteViewController.h */,
+				305940FE1B1B88D50067EBA8 /* KHWriteViewController.m */,
+			);
+			name = WriteViewController;
+			sourceTree = "<group>";
+		};
+		305941011B1BE9170067EBA8 /* MainDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				302B3D821B19516900BEBD99 /* KHDetailViewController.h */,
+				302B3D831B19516900BEBD99 /* KHDetailViewController.m */,
+			);
+			name = MainDetailViewController;
+			sourceTree = "<group>";
+		};
+		305941021B1BEE440067EBA8 /* MainDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				305941031B1BEED10067EBA8 /* KHDetailViewCell.h */,
+				305941041B1BEED10067EBA8 /* KHDetailViewCell.m */,
+			);
+			name = MainDetailCell;
+			sourceTree = "<group>";
+		};
+		305941061B1C0AB00067EBA8 /* ChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				305941071B1C0ACE0067EBA8 /* KHChatViewCell.h */,
+				305941081B1C0ACE0067EBA8 /* KHChatViewCell.m */,
+			);
+			name = ChatCell;
 			sourceTree = "<group>";
 		};
 		308AA6BD1B1534A200789924 = {
@@ -293,7 +386,7 @@
 				30D212BE1B177974008E494C /* CardBuilderTests.m */,
 				30D212C01B17EE18008E494C /* CommunicatorTests.m */,
 				30E9FA101B18913700B8705C /* KHRealmTests.m */,
-				30E9FA371B18C53700B8705C /* KHAMQPTests.m */,
+				30593F911B1B521B0067EBA8 /* KHAMQPTests.m */,
 			);
 			path = CardTalkProject_FinalTests;
 			sourceTree = "<group>";
@@ -309,8 +402,8 @@
 		308AA6F21B1534D800789924 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
-				302B3D881B195B1E00BEBD99 /* Cell */,
 				302B3D7A1B193BA500BEBD99 /* ViewController */,
+				302B3D881B195B1E00BEBD99 /* Cell */,
 				302B3D761B18DCD800BEBD99 /* DataSource */,
 			);
 			name = TabView;
@@ -331,6 +424,10 @@
 				308AA7071B15BAEA00789924 /* KHUserModel.m */,
 				308AA70D1B16054100789924 /* KHRoomModel.h */,
 				308AA70E1B16054100789924 /* KHRoomModel.m */,
+				302B3DC71B1B2B6E00BEBD99 /* KHHostModel.h */,
+				302B3DC81B1B2B6E00BEBD99 /* KHHostModel.m */,
+				30BF3CB71B1DBB62008F4776 /* KHRealmCardModel.h */,
+				30BF3CB81B1DBB62008F4776 /* KHRealmCardModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -422,6 +519,39 @@
 		8C99D89DB522459B09705C68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30593FA31B1B57B50067EBA8 /* LICENSE.md */,
+				30593F931B1B56120067EBA8 /* amqp_framing.h */,
+				30593F941B1B56120067EBA8 /* amqp_hostcheck.h */,
+				30593F951B1B56120067EBA8 /* amqp_private.h */,
+				30593F961B1B56120067EBA8 /* amqp_socket.h */,
+				30593F971B1B56120067EBA8 /* amqp_ssl_socket.h */,
+				30593F981B1B56120067EBA8 /* amqp_tcp_socket.h */,
+				30593F991B1B56120067EBA8 /* amqp_timer.h */,
+				30593F9A1B1B56120067EBA8 /* amqp.h */,
+				30593F651B1B500C0067EBA8 /* AMQPChannel.h */,
+				30593F661B1B500C0067EBA8 /* AMQPChannel.m */,
+				30593F671B1B500C0067EBA8 /* AMQPConnection.h */,
+				30593F681B1B500C0067EBA8 /* AMQPConnection.m */,
+				30593F691B1B500C0067EBA8 /* AMQPConsumer.h */,
+				30593F6A1B1B500C0067EBA8 /* AMQPConsumer.m */,
+				30593F6B1B1B500C0067EBA8 /* AMQPConsumerThread.h */,
+				30593F6C1B1B500C0067EBA8 /* AMQPConsumerThread.m */,
+				30593F6D1B1B500C0067EBA8 /* AMQPConsumerThreadDelegate.h */,
+				30593F6E1B1B500C0067EBA8 /* AMQPExchange.h */,
+				30593F6F1B1B500C0067EBA8 /* AMQPExchange.m */,
+				30593F701B1B500C0067EBA8 /* AMQPExchange+Additions.h */,
+				30593F711B1B500C0067EBA8 /* AMQPExchange+Additions.m */,
+				30593F721B1B500C0067EBA8 /* AMQPMessage.h */,
+				30593F731B1B500C0067EBA8 /* AMQPMessage.m */,
+				30593F741B1B500C0067EBA8 /* AMQPObject.h */,
+				30593F751B1B500C0067EBA8 /* AMQPObject.m */,
+				30593F761B1B500C0067EBA8 /* AMQPQueue.h */,
+				30593F771B1B500C0067EBA8 /* AMQPQueue.m */,
+				30593F781B1B500C0067EBA8 /* AMQPTTLManager.h */,
+				30593F791B1B500C0067EBA8 /* AMQPTTLManager.m */,
+				30593F7A1B1B500C0067EBA8 /* AMQPWrapper.h */,
+				30593F621B1B4FCF0067EBA8 /* librabbitmq.a */,
+				30593F2F1B1B4D840067EBA8 /* librabbitmq-objc */,
 				6D63C4BD3361E3C4941A74A4 /* libPods-CardTalkProject_Final.a */,
 				E7648328F88BC5EE4E2B7A01 /* libPods-CardTalkProject_FinalTests.a */,
 			);
@@ -516,7 +646,6 @@
 			files = (
 				308AA6D81B1534A200789924 /* Main.storyboard in Resources */,
 				308AA6DD1B1534A200789924 /* LaunchScreen.xib in Resources */,
-				302B3D791B19383100BEBD99 /* LoginView.xib in Resources */,
 				308AA6DA1B1534A200789924 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,6 +730,7 @@
 				30D212D31B18728A008E494C /* KHImageCommunicator.m in Sources */,
 				308AA7081B15BAEA00789924 /* KHUserModel.m in Sources */,
 				308AA70F1B16054100789924 /* KHRoomModel.m in Sources */,
+				305941091B1C0ACE0067EBA8 /* KHChatViewCell.m in Sources */,
 				308AA6FD1B1535F300789924 /* KHChatModel.m in Sources */,
 				30E9FA141B1894A200B8705C /* KHRealmTestRoomModel.m in Sources */,
 				30D212D71B187C61008E494C /* KHCardTalkObjectConfiguration.m in Sources */,
@@ -609,17 +739,23 @@
 				30D212CC1B187238008E494C /* KHImageStore.m in Sources */,
 				302B3D7E1B1940EE00BEBD99 /* KHMainTableViewDataSource.m in Sources */,
 				30E9FA1B1B18977B00B8705C /* KHRealmTestUserModel.m in Sources */,
+				305940FF1B1B88D50067EBA8 /* KHWriteViewController.m in Sources */,
+				302B3DC31B1AA6C200BEBD99 /* KHLoginViewController.m in Sources */,
 				308AA7221B16A37C00789924 /* KHCardTalkCommunicator.m in Sources */,
 				30D212C41B1802EC008E494C /* KHChatBuilder.m in Sources */,
 				302B3D871B19524C00BEBD99 /* KHDetailTableViewDataSource.m in Sources */,
 				308AA6CC1B1534A200789924 /* main.m in Sources */,
 				308AA7171B1695C600789924 /* KHCardTalkDataManager.m in Sources */,
+				305941051B1BEED10067EBA8 /* KHDetailViewCell.m in Sources */,
 				308AA6FA1B1535E100789924 /* KHCardModel.m in Sources */,
 				306F5E191B17210C00EC6A69 /* KHCardBuilder.m in Sources */,
 				302B3D811B194B6300BEBD99 /* KHMainViewController.m in Sources */,
 				302B3D841B19516900BEBD99 /* KHDetailViewController.m in Sources */,
 				308AA7051B15BADC00789924 /* KHImageFileModel.m in Sources */,
 				30E9FA181B1895CD00B8705C /* KHRealmTestChatModel.m in Sources */,
+				302B3DC91B1B2B6E00BEBD99 /* KHHostModel.m in Sources */,
+				30BF3CB91B1DBB62008F4776 /* KHRealmCardModel.m in Sources */,
+				302B3DC61B1AA74B00BEBD99 /* KHLoginView.m in Sources */,
 				302B3D8B1B195C2900BEBD99 /* KHMainImageViewCell.m in Sources */,
 				308AA7021B15954F00789924 /* KHBasicModel.m in Sources */,
 			);
@@ -640,7 +776,7 @@
 				30E9FA111B18913700B8705C /* KHRealmTests.m in Sources */,
 				308AA6FF1B15394D00789924 /* CardModelTests.m in Sources */,
 				308AA7181B1695C600789924 /* KHCardTalkDataManager.m in Sources */,
-				30E9FA381B18C53700B8705C /* KHAMQPTests.m in Sources */,
+				30593F921B1B521B0067EBA8 /* KHAMQPTests.m in Sources */,
 				306F5E161B16F8AF00EC6A69 /* FakeKHCardBuilder.m in Sources */,
 				308AA70C1B16019000789924 /* ChatModelTests.m in Sources */,
 			);
@@ -680,6 +816,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -712,10 +852,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/fodrh/Documents/original-c-rabbitmq/librabbitmq/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/fodrh/Documents/librabbitmq-objc/rabbitmq-c/**",
+					"/Users/fodrh/Documents/librabbitmq-objc/**",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -723,6 +878,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -749,10 +908,26 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/fodrh/Documents/original-c-rabbitmq/librabbitmq/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/fodrh/Documents/librabbitmq-objc/rabbitmq-c/**",
+					"/Users/fodrh/Documents/librabbitmq-objc/**",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Release;
 		};
@@ -764,6 +939,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CardTalkProject_Final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/fodrh/Documents/librabbitmq-objc/rabbitmq-c",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -776,6 +955,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CardTalkProject_Final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/fodrh/Documents/librabbitmq-objc/rabbitmq-c",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -793,8 +976,27 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Realm\"",
+					"\"${PODS_ROOT}/Headers/Public/Realm/realm\"",
+					"/Users/fodrh/Documents/librabbitmq-objc/rabbitmq-c",
+					"/Users/fodrh/Documents/librabbitmq-objc/**",
+				);
 				INFOPLIST_FILE = CardTalkProject_FinalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/fodrh/Documents/librabbitmq-objc/rabbitmq-c",
+					"/Users/fodrh/Documents/librabbitmq-objc",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardTalkProject_Final.app/CardTalkProject_Final";
 			};
@@ -809,8 +1011,27 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Realm\"",
+					"\"${PODS_ROOT}/Headers/Public/Realm/realm\"",
+					"/Users/fodrh/Documents/librabbitmq-objc/rabbitmq-c",
+					"/Users/fodrh/Documents/librabbitmq-objc/**",
+				);
 				INFOPLIST_FILE = CardTalkProject_FinalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/fodrh/Documents/librabbitmq-objc/rabbitmq-c",
+					"/Users/fodrh/Documents/librabbitmq-objc",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardTalkProject_Final.app/CardTalkProject_Final";
 			};

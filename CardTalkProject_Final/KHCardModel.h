@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "KHBasicModel.h"
 #import "KHUserModel.h"
+#import "KHRoomModel.h"
 #import "KHImageFileModel.h"
 
 
@@ -19,6 +20,7 @@
 @property (nonatomic,strong) NSMutableArray *imageList;
 @property (nonatomic, strong) KHUserModel *author;
 @property (nonatomic, strong) NSDate *date;
+
 
 
 - (instancetype)initWithJsonString:(NSString *)json;

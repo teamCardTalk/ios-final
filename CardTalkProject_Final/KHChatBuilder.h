@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KHChatModel.h"
 
 @interface KHChatBuilder : NSObject
+
+@property (copy) NSString *JSON;
+@property (copy) NSArray *arrayToReturn;
+@property (copy) NSError *errorToSet;
+
+
+- (NSArray *) chatsFromJSON: (NSString *)json error:(NSError **)error;
+
 
 @end

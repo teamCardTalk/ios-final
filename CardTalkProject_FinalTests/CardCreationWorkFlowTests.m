@@ -60,11 +60,11 @@ extern NSString *CardTalkManagerError;
 //- (void)testNonConformingObjectCannotBeDelegate {
 //    XCTAssertThrows(mgr.delegate = (id <KHCardTalkDataManagerDelegate>) [NSNull null], @"NSNull should not be used as the delegates as doesn't conform to the delegate protogcol");
 //}
-
-- (void) testConformingObjectCanBeDelegate {
-    id <KHCardTalkManagerDelegate> delegate = [[MockKHCardTalkDataManagerDelegate alloc] init];
-    XCTAssertNoThrow(mgr.delegate = delegate, @"Object conforming to the delegate protocol should be used as the delegate");
-}
+//
+//- (void) testConformingObjectCanBeDelegate {
+//    id <KHCardTalkManagerDelegate> delegate = [[MockKHCardTalkDataManagerDelegate alloc] init];
+//    XCTAssertNoThrow(mgr.delegate = delegate, @"Object conforming to the delegate protocol should be used as the delegate");
+//}
 
 - (void) testAskingForCardsMeansRequestingData {
     MockKHCardTalkCommunicator *communicator = [[MockKHCardTalkCommunicator alloc] init];

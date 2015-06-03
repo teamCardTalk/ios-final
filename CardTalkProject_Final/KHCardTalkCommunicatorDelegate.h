@@ -12,10 +12,15 @@
 @protocol KHCardTalkCommunicatorDelegate <NSObject>
 
 - (void) searchingForCardsFailedWithError:(NSError*)error;
+- (void) searchingForChatsFailedWithError:(NSError *)error;
+- (void) postingForCardsFaildWithError:(NSError *)error;
+- (void) postingForLoginFaildWithError:(NSError *)error;
+- (void) postingForSignUpFaildWithError:(NSError *)error;
 - (void) receivedCardJSON:(NSString *)json;
-- (void) finishPostCard;
-- (void) finishPostLogin;
-- (void) finishPostSignUp;
+- (void) receivedChatJSON:(NSString *)json;
+- (void) finishPostCard:(NSString *)response;
+- (void) finishPostLogin:(NSString *)response;
+- (void) finishPostSignUp:(NSString *)response;
 
 
 @end

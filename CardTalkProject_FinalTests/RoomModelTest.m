@@ -25,7 +25,7 @@
     NSString *cardJsonString = @"{    \"status\" : \"1\",    \"partynumber\" : \"1\",    \"content\" : \"고양이는 귀엽습니다. 그렇습니다.\",    \"createtime\" : \"15-05-24 19:07\",    \"title\" : \"녹색 여왕의 알콩달콩한 다락방\",    \"_id\" : \"5561a2c76800d5774f77d5e0\",    \"file\" : [         {            \"path\" : \"../data/upload_32295249878886ab59f1a3bec635b9c1.JPG\",            \"name\" : \"cat01.JPG\",            \"_id\" : \"5561a2c76800d5774f77d5e1\"        }    ],    \"author\" : {        \"userid\" : \"user02\",        \"nickname\" : \"노란 광대\",        \"icon\" : \"icon/icon2.png\"    },    \"__v\" : 0}";
     
     card = [[KHCardModel alloc] initWithJsonString:cardJsonString];
-    room = [[KHRoomModel alloc] initWithCard:card];
+//    room = [[KHRoomModel alloc] initWithCard:card];
     
     
 }

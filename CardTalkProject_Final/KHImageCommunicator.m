@@ -19,6 +19,8 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     [self.delegate communicatorReceivedData:[self.receivedData copy] forURL:self.url];
+    
+    
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {

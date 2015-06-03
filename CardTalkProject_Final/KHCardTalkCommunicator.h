@@ -13,7 +13,9 @@
 @interface KHCardTalkCommunicator : NSObject<NSURLConnectionDataDelegate> {
 @protected
     NSURL *fetchingURL;
+    NSURL *postingURL;
     NSURLConnection *fetchingConnection;
+    NSURLConnection *postingConnection;
     NSMutableData *receivedData;
 @private
     id <KHCardTalkCommunicatorDelegate> __weak delegate;
@@ -25,6 +27,7 @@
 
 
 - (void)searchForRecentCards;
+- (void)searchForChatsAtCard:(NSString *)articleid;
 - (void)postCard:(NSDictionary *)cardDict;
 - (void)postLogin:(NSDictionary *)userInfo;
 - (void)postSignUp:(NSDictionary *)userInfo;

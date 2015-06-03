@@ -10,12 +10,13 @@
 #import "KHCardTalkObjectConfiguration.h"
 #import "KHCardTalkDataManager.h"
 #import <Realm/Realm.h>
+#import "KHDetailTableViewDataSource.h"
 
-@interface KHDetailViewController : UIViewController
+@interface KHDetailViewController : UIViewController <KHCardTalkManagerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSObject <UITableViewDelegate, UITableViewDataSource> *dataSource;
+@property (strong, nonatomic) KHDetailTableViewDataSource *dataSource;
 @property (strong, nonatomic) KHCardTalkObjectConfiguration *objectConfiguration;
 @property (strong, nonatomic) KHCardTalkDataManager *manager;
 @property (nonatomic, strong) RLMNotificationToken *dataNotification;

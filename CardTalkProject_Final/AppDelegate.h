@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Realm/Realm.h>
+#import "KHHostModel.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -9,9 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "KHCardModel.h"
+#import "KHDetailViewCell.h"
+#import "KHMainImageViewCell.h"
+#import "KHMainTableViewDataSource.h"
+#import "KHChatViewCell.h"
 
-@interface KHDetailTableViewDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
+@interface KHDetailTableViewDataSource : KHMainTableViewDataSource
 
 @property (strong, nonatomic) KHCardModel *card;
+@property (strong, nonatomic) NSArray *chatList;
 
 @end
